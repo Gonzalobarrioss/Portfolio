@@ -8,8 +8,8 @@ import SigninPage from './pages/signin'
 
 function App() {
   return (
-    <Router>
-      <Routes basename='https://gonzalobarrioss.github.io/Portfolio/'>
+    <Router basename="https://gonzalobarrioss.github.io/Portfolio/">
+      <Routes>
         <Route path='/' element={ <Home />} />
         <Route path='/signin' element={ <SigninPage />} />
       </Routes>
