@@ -8,13 +8,11 @@ import SigninPage from './pages/signin'
 
 function App() {
   return (
-    <Router basename=''>
-      <Routes>
+    <Router>
+      <Routes basename='https://gonzalobarrioss.github.io/Portfolio/'>
         <Route path='/' element={ <Home />} />
         <Route path='/signin' element={ <SigninPage />} />
       </Routes>
-     
-      
     </Router>
   );
 }

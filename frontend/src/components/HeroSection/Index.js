@@ -48,7 +48,7 @@ const HeroSection = () => {
             <HeroBtnWrapper>
 
                 <ButtonNeon 
-                    to='singup' 
+                    to='/' 
                     onMouseEnter={onHover} 
                     onMouseLeave={onHover}
                     primary='true'
