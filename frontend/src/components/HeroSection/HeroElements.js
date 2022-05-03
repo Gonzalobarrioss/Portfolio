@@ -1,27 +1,17 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
+    top:0;
+    left:0;
+    background: #0c0c0c;
     height: 800px;
-    position: relative;
     z-index: 1;
 
-    :before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%),
-                    linear-gradient(180deg, rgba(0,0,0,0.2), 0%, transparent 100%);
-        z-index: 2;
-    }
 `
 
 export const HeroBg = styled.div`
@@ -90,6 +80,10 @@ export const HeroBtnWrapper = styled.div`
     align-items: center;
 `
 
+export const HeroNeonBtnWrapper = styled.div`
+    
+`
+
 export const ArrowForward = styled(MdArrowForward)`
     margin-left: 8px;
     font-size: 20px;
@@ -99,3 +93,79 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
 `
+
+const animate = keyframes`
+    0%,99%{
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+        
+    }
+    5%,95%{
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+
+`
+const animate2 = keyframes`
+    0%,100%{
+        color: #fff;
+        filter: blur(1px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+        
+    }
+`
+
+export const HeroGlowingLetter = styled.span`
+    margin: 0;
+    padding: 0;
+    animation: ${animate} 2s linear;
+    transition: 0.75s;
+
+    &:nth-child(1){
+        animation-delay: 0.25s;
+    }
+    &:nth-child(2){
+        animation-delay: 0.5s;
+    }
+    &:nth-child(3){
+        animation-delay: 0.75s;
+    }
+    &:nth-child(4){
+        animation-delay: 1s;
+    }
+    &:nth-child(5){
+        animation-delay: 1.25s;
+    }
+    &:nth-child(6){
+        animation-delay: 1.5s;
+    }
+    &:nth-child(7){
+        animation-delay: 1.75s;
+    }
+
+`
+export const HeroGlowingText = styled.p`
+    padding: 0; 
+    margin: 0;
+    color: #111;
+    animation: ${animate2} 3s linear infinite;
+    animation-delay: 4s;
+`
+
+

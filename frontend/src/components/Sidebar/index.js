@@ -1,4 +1,8 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faInstagram,faTwitter } from "@fortawesome/free-brands-svg-icons"
+
+
 import { 
     SidebarContainer, 
     Icon, 
@@ -6,8 +10,13 @@ import {
     SidebarWrapper, 
     SidebarMenu, 
     SidebarLink, 
+    ButtonLink,
     SideBtnWrap, 
-    SidebarRoute 
+    SidebarRoute ,
+    SocialMediaWrap,
+    SocialMediaLink,
+    ButtonSocialMedia,
+    SocialMediaContainer
 } from './SidebarElements'
 
 const Sidebar = (props) => {
@@ -21,14 +30,15 @@ const Sidebar = (props) => {
         </Icon>
         <SidebarWrapper>
             <SidebarMenu>
-                <SidebarLink to='about' onClick={toggle} color={'--clr'} attr={"data-text"}>
-                    About
+                <SidebarLink to='about' onClick={toggle} >
+                    <ButtonLink data-text="&nbsp;About" color='#00ade1'>&nbsp;About</ButtonLink>
                 </SidebarLink>
-                <SidebarLink to='discover' onClick={toggle} color={'--clr'} attr={"data-text"}>
-                    Works
+                <SidebarLink to='discover' onClick={toggle}>
+                    
+                    <ButtonLink data-text="&nbsp;Works" color='#ffdd1c'>&nbsp;Works</ButtonLink>
                 </SidebarLink>
-                <SidebarLink to='services' onClick={toggle} color={'--clr'} attr={"data-text"}>
-                    Contact
+                <SidebarLink to='services' onClick={toggle}>
+                    <ButtonLink data-text="&nbsp;Contact" color='#00dc82'>&nbsp;Contact</ButtonLink>
                 </SidebarLink>
                 {/*
                 <SidebarLink to='signup' onClick={toggle}>
@@ -36,11 +46,19 @@ const Sidebar = (props) => {
                 </SidebarLink>
                 */}
             </SidebarMenu>
-            <SideBtnWrap>
-                <SidebarRoute to='/signin'>
-                    Sign In
-                </SidebarRoute>
-            </SideBtnWrap>
+            <SocialMediaContainer>
+                <SocialMediaWrap>
+                    <SocialMediaLink to='/signin' color='#1877f2'>
+                        <ButtonSocialMedia color='#1877f2'><FontAwesomeIcon icon={faFacebookF} /></ButtonSocialMedia>
+                    </SocialMediaLink>
+                    <SocialMediaLink to='/signin' color='#1da1f2'>
+                        <ButtonSocialMedia color='#1da1f2'><FontAwesomeIcon icon={faTwitter} /></ButtonSocialMedia>
+                    </SocialMediaLink>
+                    <SocialMediaLink to='/signin' color='#8c0e6d'>
+                        <ButtonSocialMedia color='#c32aa3'><FontAwesomeIcon icon={faInstagram} /></ButtonSocialMedia>
+                    </SocialMediaLink>
+                </SocialMediaWrap>
+            </SocialMediaContainer>
         </SidebarWrapper>
     </SidebarContainer>
   )

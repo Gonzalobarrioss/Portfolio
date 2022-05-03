@@ -22,3 +22,27 @@ export const Button = styled(Link)`
         background: ${({primary}) => (primary ? '#fff' : '#01BF71')};
     }
 `
+
+export const ButtonNeon = styled(Link)`
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    color: #03e9f4;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
+    &:hover{
+        background: #03e9f4;
+        color: #050801;
+        box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    }
+`

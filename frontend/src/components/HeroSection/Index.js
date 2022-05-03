@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 //import Video from '../../videos/video.mp4'
-import { Button } from '../ButtonElement'
+import { ButtonNeon } from '../ButtonElement'
 import { 
     HeroContainer, 
     HeroBg, 
@@ -10,7 +10,9 @@ import {
     HeroP, 
     HeroBtnWrapper, 
     ArrowForward, 
-    ArrowRight 
+    ArrowRight,
+    HeroGlowingText,
+    HeroGlowingLetter
 } from './HeroElements'
 
 const HeroSection = () => {
@@ -28,12 +30,24 @@ const HeroSection = () => {
         <HeroBg>
         </HeroBg>
         <HeroContent>
-            <HeroH1>Virtual Banking Made East</HeroH1>
+            <HeroH1>
+                Hi, my name is 
+                <HeroGlowingText>
+                    <HeroGlowingLetter>G</HeroGlowingLetter>
+                    <HeroGlowingLetter>O</HeroGlowingLetter>
+                    <HeroGlowingLetter>N</HeroGlowingLetter>
+                    <HeroGlowingLetter>Z</HeroGlowingLetter>
+                    <HeroGlowingLetter>A</HeroGlowingLetter>
+                    <HeroGlowingLetter>L</HeroGlowingLetter>
+                    <HeroGlowingLetter>O</HeroGlowingLetter>
+                </HeroGlowingText>
+            </HeroH1>
             <HeroP>
-                Sing up for a new account today and receive $250 in credit towards your next payment
+                I love develop webpages
             </HeroP>
             <HeroBtnWrapper>
-                <Button 
+
+                <ButtonNeon 
                     to='singup' 
                     onMouseEnter={onHover} 
                     onMouseLeave={onHover}
@@ -44,9 +58,13 @@ const HeroSection = () => {
                     $spy={true}
                     exact="true"
                     offset={-80}
-                >
+                >   
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-                </Button>
+                </ButtonNeon>
             </HeroBtnWrapper>
         </HeroContent>
     </HeroContainer>

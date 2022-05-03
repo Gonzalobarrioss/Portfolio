@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? 'transparent' : '#0d0d0d')};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -62,7 +62,6 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -126,6 +125,34 @@ export const NavLink = styled(LinkR)`
         color: #15cdfc;
     }
 `
+
+const animate = keyframes`
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+            0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 160px #03bcf4;
+    }
+`
+
+export const GlowingText = styled.h3`
+    position: relative;
+    letter-spacing: 2px;
+    color: #0e3742;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    line-height: 0.75em;
+    animation: ${animate} 10s linear infinite;
+`
+
 
 
 

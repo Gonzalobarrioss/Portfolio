@@ -4,17 +4,19 @@ import { Link as LinkS } from 'react-scroll'
 import { Link as LinkR } from 'react-router-dom'
 
 export const SidebarContainer = styled.aside`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    min-height: 100vh;
+    background: #0d0d0d;
     
     position: fixed;
-    z-index: 999;
+    z-index: 10000;
     width: 100%;
-    height: 100%;
-    background: #0d0d0d;
-    display: grid;
-    align-items: center;
-    top: 0;
-    left: 0;
-    transition: 0.3s ease-in-out;
+    
+    transition: 1.25s ease-in-out;
+    
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
@@ -32,55 +34,47 @@ export const Icon = styled.div`
     outline: none;
 `
 export const SidebarWrapper = styled.div`
-    color: #fff;
+    color: #fff;   
 `
 export const SidebarMenu = styled.ul`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 80px);
-    text-align: center;
-
-    @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(6, 60px);
-    }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
 `
 
 export const SidebarLink = styled(LinkS)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    cursor: pointer;
+    position: relative;
+    list-style: none;
+`
 
-    font-size: 4em;
+export const ButtonLink = styled.a`
+    position: relative;
+    cursor:pointer;
+    font-size: 2.5em;
     text-decoration: none;
     line-height: 1em;
     letter-spacing: 2px;
     text-transform: uppercase;
-    
     color: transparent;
     -webkit-text-stroke: 1px rgba(255,255,255,0.5);
 
-    transition: 0.2s ease-in-out;
-
-    
-
     &:before {
-        content: 'attr(data-text)';
+        content: attr(data-text);
         position: absolute;
         color: #fff;
         width: 0;
         overflow: hidden;
-        transition: 1s;
-        border-right: 8px solid var(--clr);
-        -webkit-text-stroke: 1px var(--clr);
+        transition: 0.75s;
+        border-right: 8px solid ${props => props.color};
+        -webkit-text-stroke: 1px ${props => props.color};
     }
 
-    &:hover {
+    &:hover:before {
         width: 100%;
-        filter: drop-shadow(0 0 25px var(--clr));
+        filter: drop-shadow(0 0 25px ${props => props.color});
     }
-
 
 `
 
@@ -107,4 +101,68 @@ export const SidebarRoute = styled(LinkR)`
         background: #fff;
         color: #010606;
     }
+`
+export const SocialMediaContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d0d0d;
+`
+
+export const SocialMediaWrap = styled.ul`
+    padding:0;
+    position: relative;
+    display: flex;
+    gap: 50px;
+`
+
+export const ButtonSocialMedia = styled.a`
+    position: relative;
+    text-decoration: none;
+    color: ${props => props.color};
+    z-index: 10;
+    font-size: 2em;
+    transition: 0.5s; 
+`
+
+export const SocialMediaLink = styled.li`
+    position: relative;
+    list-style: none;  
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover{
+        z-index: 10000;
+        transform: scale(0.75);
+        ${ButtonSocialMedia}{
+            font-size: 3em;
+            filter: drop-shadow(0 0 20px ${props => props.color}) drop-shadow(0 0 40px ${props => props.color}) drop-shadow(0 0 60px ${props => props.color});
+        }
+    }
+
+    &:before{
+        content: '';
+        position: absolute;
+        inset: 30px;
+        box-shadow: 0 0 0 10px ${props => props.color}, 0 0 0 20px #222, 0 0 0 22px ${props => props.color};
+        transition: 0.5s;
+    }
+
+    &:hover:before{
+        inset: 0px;
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #0d0d0d;
+        transform: rotate(45deg);
+    }
+
 `

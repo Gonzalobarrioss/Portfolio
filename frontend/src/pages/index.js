@@ -16,16 +16,18 @@ const Home = () => {
     }
 
   return (
-    <>
+    <div style={{ margin:0, padding:0, boxSizing:'border-box'}}>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
         <HeroSection />
-        <InfoSection {...homeObjOne}/>
+        
+        
+        {/*<InfoSection {...homeObjOne}/>
         <InfoSection {...homeObjTwo}/>
         <Services />
         <InfoSection {...homeObjThree}/>
-        <Footer />
-    </>
+        <Footer />*/}
+    </div>
   )
 }
 

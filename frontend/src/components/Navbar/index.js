@@ -7,6 +7,7 @@ import {
     NavMenu, 
     NavItem, 
     NavLinks,
+    GlowingText,
     NavBtn,
     NavBtnLink
 } from './NavbarElements'
@@ -45,7 +46,7 @@ const Navbar = ({toggle}) => {
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer >
                     <NavLogo to='/' onClick={toggleHome}>
-                        eureka  
+                        <GlowingText>eureka</GlowingText>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
@@ -53,7 +54,7 @@ const Navbar = ({toggle}) => {
 
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='signup'
+                            <NavLinks to='/'
                             smooth={true} 
                             duration={500}
                             spy={true}
@@ -74,10 +75,6 @@ const Navbar = ({toggle}) => {
                                 About
                             </NavLinks>
                         </NavItem>
-
-                        <NavBtn>
-                            <NavBtnLink to='/signin'>Sing In</NavBtnLink>
-                        </NavBtn>
 
                         <NavItem>
                             <NavLinks to='discover'
