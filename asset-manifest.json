@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f5c2dccf.css",
+    "main.js": "/portfolio/static/js/main.bb6e648e.js",
+    "static/media/bussines_woman.svg": "/portfolio/static/media/bussines_woman.7671d99a741ffdaed3c31e7aa2f957b8.svg",
+    "static/media/data.svg": "/portfolio/static/media/data.1fd647bc32ed79f1789b98ed3fc8b3be.svg",
+    "static/media/interview.svg": "/portfolio/static/media/interview.69821a20eb8701d5145c606b955cd546.svg",
+    "static/media/credit_card.svg": "/portfolio/static/media/credit_card.f0df71d4f1f810dc491f95980e9da942.svg",
+    "index.html": "/portfolio/index.html",
+    "main.f5c2dccf.css.map": "/portfolio/static/css/main.f5c2dccf.css.map",
+    "main.bb6e648e.js.map": "/portfolio/static/js/main.bb6e648e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5c2dccf.css",
+    "static/js/main.bb6e648e.js"
+  ]
+}
