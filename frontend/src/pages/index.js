@@ -6,6 +6,7 @@ import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data'
 import Services from '../components/Services'
 import Footer from '../components/Footer'
+import FaBackground from '../components/background'
 
 const Home = () => {
 
@@ -16,7 +17,7 @@ const Home = () => {
     }
 
   return (
-    <div style={{ margin:0, padding:0, boxSizing:'border-box'}}>
+    <div>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
         <HeroSection />

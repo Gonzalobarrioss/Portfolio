@@ -1,7 +1,8 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import {FaTimes} from 'react-icons/fa'
 import { Link as LinkS } from 'react-scroll'
 import { Link as LinkR } from 'react-router-dom'
+
 
 export const SidebarContainer = styled.aside`
     display: flex;
@@ -15,9 +16,9 @@ export const SidebarContainer = styled.aside`
     z-index: 10000;
     width: 100%;
     
-    transition: 1.25s ease-in-out;
+    transition: 0.5s ease-in-out;
     
-    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    opacity: ${({ isOpen }) => (isOpen ? '95%' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 
@@ -40,7 +41,7 @@ export const SidebarMenu = styled.ul`
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
     
 `
 
@@ -49,16 +50,28 @@ export const SidebarLink = styled(LinkS)`
     list-style: none;
 `
 
-export const ButtonLink = styled.a`
+const animate = keyframes`
+    0%,99%{
+        border-right: none;
+    }
+    50%{
+        border-right: 8px solid #03e9f4;
+    }
+`
+
+
+export const ButtonLink = styled.span`
     position: relative;
+    
     cursor:pointer;
-    font-size: 2.5em;
+    font-size: 3.5em;
     text-decoration: none;
-    line-height: 1em;
-    letter-spacing: 2px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+
 
     &:before {
         content: attr(data-text);
@@ -69,15 +82,16 @@ export const ButtonLink = styled.a`
         transition: 0.75s;
         border-right: 8px solid ${props => props.color};
         -webkit-text-stroke: 1px ${props => props.color};
+        animation: ${animate} 1s steps(1) infinite;
     }
 
     &:hover:before {
         width: 100%;
         filter: drop-shadow(0 0 25px ${props => props.color});
+        animation: ${animate} 0s infinite;
     }
 
 `
-
 
 export const SideBtnWrap = styled.div`
     display: flex;

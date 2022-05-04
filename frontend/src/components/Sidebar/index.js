@@ -2,7 +2,6 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram,faTwitter } from "@fortawesome/free-brands-svg-icons"
 
-
 import { 
     SidebarContainer, 
     Icon, 
@@ -24,21 +23,25 @@ const Sidebar = (props) => {
     const {isOpen, toggle} = props
 
   return (
+    
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        
         <Icon onClick={toggle}>
             <CloseIcon />
         </Icon>
         <SidebarWrapper>
             <SidebarMenu>
                 <SidebarLink to='about' onClick={toggle} >
-                    <ButtonLink data-text="&nbsp;About" color='#00ade1'>&nbsp;About</ButtonLink>
+                    <ButtonLink data-text="&nbsp;About" color='#03e9f4'>&nbsp;About</ButtonLink>
+                </SidebarLink>
+                <SidebarLink to='skills' onClick={toggle} >
+                    <ButtonLink data-text="&nbsp;Skills" color='#03e9f4'>&nbsp;Skills</ButtonLink>
                 </SidebarLink>
                 <SidebarLink to='discover' onClick={toggle}>
-                    
-                    <ButtonLink data-text="&nbsp;Works" color='#ffdd1c'>&nbsp;Works</ButtonLink>
+                    <ButtonLink data-text="&nbsp;Works" color='#03e9f4'>&nbsp;Works</ButtonLink>
                 </SidebarLink>
                 <SidebarLink to='services' onClick={toggle}>
-                    <ButtonLink data-text="&nbsp;Contact" color='#00dc82'>&nbsp;Contact</ButtonLink>
+                    <ButtonLink data-text="&nbsp;Contact" color='#03e9f4'>&nbsp;Contact</ButtonLink>
                 </SidebarLink>
                 {/*
                 <SidebarLink to='signup' onClick={toggle}>
@@ -46,6 +49,8 @@ const Sidebar = (props) => {
                 </SidebarLink>
                 */}
             </SidebarMenu>
+
+            {/*
             <SocialMediaContainer>
                 <SocialMediaWrap>
                     <SocialMediaLink to='/signin' color='#1877f2'>
@@ -59,7 +64,9 @@ const Sidebar = (props) => {
                     </SocialMediaLink>
                 </SocialMediaWrap>
             </SocialMediaContainer>
+            */}
         </SidebarWrapper>
+
     </SidebarContainer>
   )
 }

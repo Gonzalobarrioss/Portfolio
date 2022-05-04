@@ -9,7 +9,6 @@ import SigninPage from './pages/signin'
 function App() {
   return (
     <>
-    <div>Hola</div>
     <HashRouter base='https://gonzalobarrioss.github.io/Portfolio/'>
       <Routes>
         <Route path='/' element={ <Home />} />
