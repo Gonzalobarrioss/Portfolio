@@ -58,15 +58,16 @@ const Footer = () => {
                         <FooterLink to='/'>Facebook</FooterLink>
                         <FooterLink to='/'>Youtube</FooterLink>
                         <FooterLink to='/'>Twitter</FooterLink>
+                        <FooterLink to='/'>Twitch</FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>
-                        dolla
+                        eureka
                     </SocialLogo>
-                    <WebsiteRights>dolla {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                    <WebsiteRights>eureka {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href='//www.instagram.com/' target='_blank' aria-label='Instagram'>
                             <FaInstagram />

@@ -5,8 +5,10 @@ import HeroSection from '../components/HeroSection/Index'
 import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data'
 import Services from '../components/Services'
+import Skills from '../components/Skills'
 import Footer from '../components/Footer'
 import FaBackground from '../components/background'
+import Works from '../components/Works'
 
 const Home = () => {
 
@@ -23,11 +25,15 @@ const Home = () => {
         <HeroSection />
         
         
-        {/*<InfoSection {...homeObjOne}/>
-        <InfoSection {...homeObjTwo}/>
+        <InfoSection {...homeObjOne}/>
+        <Skills />
+        <Works />
+        <Services />
+        {/*<InfoSection {...homeObjTwo}/>
         <Services />
         <InfoSection {...homeObjThree}/>
-        <Footer />*/}
+        */}
+        <Footer />
     </div>
   )
 }

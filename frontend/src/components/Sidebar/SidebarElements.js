@@ -15,6 +15,8 @@ export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 10000;
     width: 100%;
+
+    font-family: consolas;
     
     transition: 0.5s ease-in-out;
     
@@ -51,7 +53,7 @@ export const SidebarLink = styled(LinkS)`
 `
 
 const animate = keyframes`
-    0%,99%{
+    0%,100%{
         border-right: none;
     }
     50%{

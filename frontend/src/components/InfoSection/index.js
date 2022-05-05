@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../ButtonElement'
-
+import FaBackground from '../background'
 import {
     InfoContainer, 
     InfoWrapper, 

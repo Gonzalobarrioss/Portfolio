@@ -3,8 +3,7 @@ import React, {useState} from 'react'
 import { ButtonNeon } from '../ButtonElement'
 import { 
     HeroContainer, 
-    HeroBg, 
-    //VideoBg, 
+    HeroH2,
     HeroContent, 
     HeroH1, 
     HeroP, 
@@ -27,11 +26,8 @@ const HeroSection = () => {
     
   return (
     <HeroContainer id="home">
-        <HeroBg>
-        </HeroBg>
         <HeroContent>
-            <HeroH1>
-                Hi, my name is 
+                <HeroH2>Hola, mi nombre es </HeroH2>
                 <HeroGlowingText>
                     <HeroGlowingLetter>G</HeroGlowingLetter>
                     <HeroGlowingLetter>O</HeroGlowingLetter>
@@ -41,9 +37,9 @@ const HeroSection = () => {
                     <HeroGlowingLetter>L</HeroGlowingLetter>
                     <HeroGlowingLetter>O</HeroGlowingLetter>
                 </HeroGlowingText>
-            </HeroH1>
             <HeroP>
-                I love develop webpages
+                Soy un diseñador web especializado en landing page & 4 section web.
+                CEO @eureka
             </HeroP>
             <HeroBtnWrapper>
 

@@ -54,14 +54,14 @@ const Navbar = ({toggle}) => {
 
                     <NavMenu scrollnav={scrollNav}>
                         <NavItem>
-                            <NavLinks to='/'
+                            <NavLinks to='skills'
                             smooth={true} 
                             duration={500}
                             spy={true}
                             exact="true"
                             offset={-80}
                             >
-                                Start
+                                Skills
                             </NavLinks>
                         </NavItem>
                         <NavItem>
@@ -77,7 +77,7 @@ const Navbar = ({toggle}) => {
                         </NavItem>
 
                         <NavItem>
-                            <NavLinks to='discover'
+                            <NavLinks to='works'
                             smooth={true} 
                             duration={500}
                             spy={true}

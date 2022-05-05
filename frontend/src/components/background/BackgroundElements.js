@@ -39,17 +39,17 @@ const animate4 = keyframes`
 export const BackgroundFaContainer = styled.div`
     position: relative;
     width: 100%;
-    background: #111;
+    background: #0d0d0d;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    z-index: -1;
+    z-index: 1;
 `
 export const DivFaRow = styled.div`
     animation: ${animate1} 80s linear infinite;
     animation-delay: -80s;
 
-    &:nth-child(2){
+    &:nth-child(1){
         animation: ${animate2} 80s linear infinite;
         animation-delay: -40s;
     }
@@ -64,23 +64,26 @@ export const BackgroundFaRow = styled.div`
     font-size: 64px;
     transform: rotate(-30deg);
 
-    &:nth-child(even):${DivFaRow}{
+    &:nth-child(even){
+        ${DivFaRow}{
         animation: ${animate3} 80s linear infinite;
         animation-delay: -80s;
+        }
     }
 
-    &:nth-child(even):${DivFaRow}:nth-child(2){
+    &:nth-child(even){
+        ${DivFaRow}:nth-child(2){
         animation: ${animate4} 80s linear infinite;
         animation-delay: -40s;
+        }
     }
 
 
 `
 
-
 export const FaIcon = styled.i`
     color: rgba(0, 0, 0, 0.5);
-    transition: 1s;
+    transition: 0.5s;
     padding: 0 5px;
     user-select: none;
     cursor: default;
@@ -88,6 +91,6 @@ export const FaIcon = styled.i`
     &:hover{
         transition: 0s;
         color: #0ff;
-        text-shadow: 0 0 120px #00f;
+        text-shadow: 0 0 150px #00f;
     }
 `
