@@ -4,12 +4,13 @@ import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 export const HeroContainer = styled.div`
     
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     top:0;
     left:0;
     background: #0c0c0c;
     height: 800px;
+    padding: 0px 150px;
     z-index: 1;
 
 `
@@ -114,9 +115,7 @@ const animate2 = keyframes`
                     0 0 40px #00b3ff,
                     0 0 80px #00b3ff,
                     0 0 120px #00b3ff,
-                    0 0 200px #00b3ff,
-                    0 0 300px #00b3ff,
-                    0 0 400px #00b3ff;
+                    0 0 200px #00b3ff;                    
         
     }
 `
@@ -149,15 +148,30 @@ export const HeroGlowingLetter = styled.span`
         animation-delay: 1.75s;
     }
 
+    @media screen and (max-width: 768px){
+        animation: none;
+        color: #fff;
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff;
+        letter-spacing: 2px;
+    }
+
 `
 export const HeroGlowingText = styled.h1`
     padding: 0; 
     margin: 0;
-    font-size: 2.5em;
+    font-size: clamp(40px, 8vw, 80px);
+    letter-spacing: 5px;
     text-align: start;
     color: #111;
     animation: ${animate2} 3s linear infinite;
     animation-delay: 4s;
+
+    
 `
 
 
