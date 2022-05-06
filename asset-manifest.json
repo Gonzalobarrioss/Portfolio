@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.c8d96bad.css",
-    "main.js": "/Portfolio/static/js/main.5c3691d8.js",
+    "main.css": "/Portfolio/static/css/main.29cbbfc0.css",
+    "main.js": "/Portfolio/static/js/main.f3711741.js",
     "static/media/video.mp4": "/Portfolio/static/media/video.7d1ea6a94986d5c2a068.mp4",
     "static/media/rickmorty.jpg": "/Portfolio/static/media/rickmorty.c5460a6681f5c0ad56e1.jpg",
     "static/media/bussines_woman.svg": "/Portfolio/static/media/bussines_woman.7671d99a741ffdaed3c31e7aa2f957b8.svg",
@@ -9,11 +9,11 @@
     "static/media/interview.svg": "/Portfolio/static/media/interview.69821a20eb8701d5145c606b955cd546.svg",
     "static/media/credit_card.svg": "/Portfolio/static/media/credit_card.f0df71d4f1f810dc491f95980e9da942.svg",
     "index.html": "/Portfolio/index.html",
-    "main.c8d96bad.css.map": "/Portfolio/static/css/main.c8d96bad.css.map",
-    "main.5c3691d8.js.map": "/Portfolio/static/js/main.5c3691d8.js.map"
+    "main.29cbbfc0.css.map": "/Portfolio/static/css/main.29cbbfc0.css.map",
+    "main.f3711741.js.map": "/Portfolio/static/js/main.f3711741.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8d96bad.css",
-    "static/js/main.5c3691d8.js"
+    "static/css/main.29cbbfc0.css",
+    "static/js/main.f3711741.js"
   ]
 }
