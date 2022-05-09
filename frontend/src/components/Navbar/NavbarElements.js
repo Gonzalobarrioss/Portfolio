@@ -26,9 +26,13 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 10;
     
+
+    transform:  ${({scrollnav}) => (scrollnav ? 'translateY(-100px)' : 'translateY(0%)')};
+    transition: 0.75s;
+    
+
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
-        
     }
 `
 
@@ -52,14 +56,11 @@ export const NavLogo = styled(LinkR)`
     width: 42px;
     height: 42px;
     
-    margin-left: 24px;
+    
     font-weight: bold;
     text-decoration: none;
 
-    @media screen and (max-width: 680px) {
-        transform:  ${({scrollnav}) => (scrollnav ? 'translateY(-100px)' : 'translateY(0%)')};
-        transition: 0.75s;
-    }
+    
 `
 
 export const MobileIcon = styled.div`
@@ -96,9 +97,6 @@ export const NavMenu = styled.ul`
     text-align: center;
     margin: 0 10px;
     padding:0 20px;
-    
-    transform:  ${({scrollnav}) => (scrollnav ? 'translateY(-100px)' : 'translateY(0%)')};
-    transition: 0.75s;
 
     @media screen and (max-width: 768px) {
         display: none;

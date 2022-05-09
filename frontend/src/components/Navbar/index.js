@@ -48,7 +48,7 @@ const Navbar = ({toggle}) => {
                 <NavbarContainer>
                         
                     
-                    <NavLogo to='/' onClick={toggleHome} scrollnav={scrollNav}>
+                    <NavLogo to='/' onClick={toggleHome}>
                         <GlowingText>@</GlowingText>
                         
                     </NavLogo>
@@ -57,7 +57,7 @@ const Navbar = ({toggle}) => {
                         <FaBars />
                     </MobileIcon>
 
-                    <NavMenu scrollnav={scrollNav}>
+                    <NavMenu>
                         <NavItem>
                             <NavLinks to='skills'
                             smooth={true} 

@@ -27,9 +27,9 @@ export const ButtonNeon = styled(Link)`
     position: relative;
     display: inline-block;
     padding: 20px 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #03e9f4;
-    font-size: 24px;
+    font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;

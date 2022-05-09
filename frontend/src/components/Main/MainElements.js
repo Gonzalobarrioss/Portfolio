@@ -10,11 +10,11 @@ export const MainContainer = styled.div`
     padding: 200px 150px;
 
     @media (max-width: 768px){
-        padding: 0 50px;
+        padding: 0 25px;
     }
 
-    @media (max-width: 1080px){
-        padding: 0 100px;
+    @media (min-width: 769px) and (max-width: 1080px){
+        padding: 0 40px;
     }
     
 `

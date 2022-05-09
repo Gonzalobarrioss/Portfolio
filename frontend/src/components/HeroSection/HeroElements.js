@@ -6,8 +6,15 @@ export const HeroContainer = styled.div`
     padding: 0;
     width: 100%;
     max-width: 1000px;
-    display: block;
 `
+
+export const HeroBtnWrapper = styled.div`
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
 
 export const HeroContent = styled.div`
     display: flex;
@@ -16,15 +23,20 @@ export const HeroContent = styled.div`
     align-items: start;
     min-height: 100vh;
     width: 100%;
-      
+    
     padding: 0;
     margin: 0;
     z-index: 1;
+
+    ${HeroBtnWrapper}
+    {
+        align-items: center;
+    }
 `
 
 export const HeroH1 = styled.h1`
     color: #fff;
-    text-align: center;
+    text-align: start;
     
     margin: 0;
 
@@ -61,12 +73,6 @@ export const HeroP = styled.p`
     }
 `
 
-export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
 
 export const HeroNeonBtnWrapper = styled.div`
     

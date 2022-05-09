@@ -32,7 +32,7 @@ const Home = () => {
             <InfoSection {...homeObjOne}/>
             <Skills />
             <Works />
-            <Services />
+            {/*<Services />*/}
             {/*<InfoSection {...homeObjTwo}/>
             <Services />
             <InfoSection {...homeObjThree}/>

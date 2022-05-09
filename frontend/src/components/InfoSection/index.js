@@ -1,6 +1,8 @@
 import React from 'react'
-import { Button } from '../ButtonElement'
+import { Button } from '../Buttons/ButtonElement'
 import FaBackground from '../background'
+import EnergyButtonNeon from '../Buttons/EnergyButtonNeon'
+import UserCard from '../Cards/UserCard'
 import {
     InfoContainer, 
     InfoWrapper, 
@@ -46,24 +48,32 @@ const InfoSection = (props) => {
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <BtnWrap>
-                                    <Button to='home'
-                                        $smooth={true} 
-                                        duration={500}
-                                        $spy={true}
-                                        exact="true"
-                                        offset={-80}
-                                        primary={primary ? 1 : 0}
-                                        dark={dark ? 1 : 0}
-                                        dark2={dark2 ? 1 : 0}
-                                    >{buttonLabel}</Button>
-                                </BtnWrap>
+                                <EnergyButtonNeon />
+                                {
+                                    /*
+                                        <BtnWrap>
+                                            <Button to='about'
+                                                $smooth={true} 
+                                                duration={500}
+                                                $spy={true}
+                                                exact="true"
+                                                offset={-80}
+                                                primary={primary ? 1 : 0}
+                                                dark={dark ? 1 : 0}
+                                                dark2={dark2 ? 1 : 0}
+                                            >{buttonLabel}</Button>
+                                        </BtnWrap>
+                                    */
+                                }
+                                
                             </TextWrapper>
                         </Column1>
                         <Column2>
-                            <ImgWrap>
+                            <UserCard />
+                            
+                            {/* <ImgWrap>
                                 <Img src={img} alt={alt}/>
-                            </ImgWrap>
+                            </ImgWrap> */}
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>

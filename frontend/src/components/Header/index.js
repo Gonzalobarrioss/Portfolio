@@ -10,10 +10,10 @@ function Header() {
         setIsOpen(!isOpen)
     }
   return (
-    <>
+    <HeaderContainer>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
-    </>
+    </HeaderContainer>
   )
 }
 

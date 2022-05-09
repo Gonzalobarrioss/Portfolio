@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 //import Video from '../../videos/video.mp4'
-import { ButtonNeon } from '../ButtonElement'
+import { ButtonNeon } from '../Buttons/ButtonElement'
 import { 
     HeroContainer, 
     HeroH2,
@@ -27,16 +27,17 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
         <HeroContent>
-                <HeroH2>Hola, mi nombre es </HeroH2>
-                 {/* <HeroGlowingText>
-                  <HeroGlowingLetter>G</HeroGlowingLetter>
+            <HeroH2>Hola, mi nombre es </HeroH2>
+                <HeroGlowingText>
+                    <HeroGlowingLetter>G</HeroGlowingLetter>
                     <HeroGlowingLetter>O</HeroGlowingLetter>
                     <HeroGlowingLetter>N</HeroGlowingLetter>
                     <HeroGlowingLetter>Z</HeroGlowingLetter>
                     <HeroGlowingLetter>A</HeroGlowingLetter>
                     <HeroGlowingLetter>L</HeroGlowingLetter>
                     <HeroGlowingLetter>O</HeroGlowingLetter>
-  </HeroGlowingText> */}
+                </HeroGlowingText>
+                <HeroH1>Hago paginas creativas</HeroH1>
             <HeroP>
                 Soy un diseñador web especializado en landing page & 4 section web.
                 CEO @eureka
