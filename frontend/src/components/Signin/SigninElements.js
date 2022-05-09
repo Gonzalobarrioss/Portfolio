@@ -93,7 +93,7 @@ export const FormButton = styled.button`
     font-size: 20px;
     cursor: pointer;
 `
-export const Text = styled.span`
+export const TextPassword = styled.span`
     text-align: center;
     margin-top: 24px;
     color: #fff;
