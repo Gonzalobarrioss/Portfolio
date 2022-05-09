@@ -1,8 +1,9 @@
-import React from 'react'
+import React  from 'react'
+import { ContentContainer } from './ContentElements'
 
-function Content() {
+function Content({children}) {
   return (
-    <></>
+    <ContentContainer>{children} </ContentContainer>
   )
 }
 

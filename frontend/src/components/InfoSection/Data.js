@@ -5,10 +5,14 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'about me',
-    headline: 'Software & Full Stack Web Developer SSR',
-    description: 'Web is fun...',
-    buttonLabel: 'Get started',
-    img: require('../../images/credit_card.svg').default,
+    headline: 'Web is fun',
+    description: `Hola! Mi nombre es Gonzalo y hago cosas creativas en la web. 
+                Actualmente me encuentro trabajando como Software Developer, 
+                pero en mis ratos libres me dedico al desarrollo de páginas.
+
+    `,
+    buttonLabel: 'Quiero una pagina',
+    img: require('../../images/designer.svg').default,
     alt: 'Bussines_Woman',
     dark: true,
     primary: true,

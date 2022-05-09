@@ -22,23 +22,25 @@ const Home = () => {
     <LayoutContainer>
       <Header />
     
-        <Left />
-        <Right />
-        
+      
+      <Left />
+      <Right />
         <Content>
-            <Main>
-              <InfoSection {...homeObjOne}/>
-              <Skills />
-              <Works />
-              <Services />
-              {/*<InfoSection {...homeObjTwo}/>
-              <Services />
-              <InfoSection {...homeObjThree}/>
-              */}
-            </Main>
-            <Footer />
-        </Content>
-        <HeroSection />
+        
+          <Main>
+            <HeroSection />
+            <InfoSection {...homeObjOne}/>
+            <Skills />
+            <Works />
+            <Services />
+            {/*<InfoSection {...homeObjTwo}/>
+            <Services />
+            <InfoSection {...homeObjThree}/>
+            */}
+          </Main>
+        <Footer />
+      </Content>
+        
     </LayoutContainer>
   )
 }

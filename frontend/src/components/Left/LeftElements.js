@@ -18,6 +18,10 @@ export const LeftContainer = styled.div`
         box-sizing: inherit;
     }
 
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
 `
 
 export const List = styled.ul`

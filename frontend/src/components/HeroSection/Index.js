@@ -28,15 +28,15 @@ const HeroSection = () => {
     <HeroContainer id="home">
         <HeroContent>
                 <HeroH2>Hola, mi nombre es </HeroH2>
-                <HeroGlowingText>
-                    <HeroGlowingLetter>G</HeroGlowingLetter>
+                 {/* <HeroGlowingText>
+                  <HeroGlowingLetter>G</HeroGlowingLetter>
                     <HeroGlowingLetter>O</HeroGlowingLetter>
                     <HeroGlowingLetter>N</HeroGlowingLetter>
                     <HeroGlowingLetter>Z</HeroGlowingLetter>
                     <HeroGlowingLetter>A</HeroGlowingLetter>
                     <HeroGlowingLetter>L</HeroGlowingLetter>
                     <HeroGlowingLetter>O</HeroGlowingLetter>
-                </HeroGlowingText>
+  </HeroGlowingText> */}
             <HeroP>
                 Soy un diseñador web especializado en landing page & 4 section web.
                 CEO @eureka

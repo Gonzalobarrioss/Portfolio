@@ -2,27 +2,24 @@ import styled, { keyframes } from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
 export const HeroContainer = styled.div`
-    
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    top:0;
-    left:0;
-    background: #0c0c0c;
-    height: 800px;
-    padding: 0px 150px;
-    z-index: 1;
-
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+    display: block;
 `
 
 export const HeroContent = styled.div`
-    z-index: 3;
-    max-width: 1200px;
-    position: absolute;
-    padding: 8px 24px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: start;
+    min-height: 100vh;
+    width: 100%;
+      
+    padding: 0;
+    margin: 0;
+    z-index: 1;
 `
 
 export const HeroH1 = styled.h1`

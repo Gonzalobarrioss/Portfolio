@@ -7,11 +7,13 @@ import {
     SkillsPercent,
     SkillsNumber,
     SkillsText,
-    SkillsH2
+    SkillsH2,
+    SkillsH1
 } from './SkillsElements'
 
 function Skills() {
   return (
+      
       <SkillsSection id='skills'>
         <SkillsContainer >
             <SkillsCard>

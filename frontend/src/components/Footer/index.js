@@ -1,6 +1,6 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
-import {FaFacebook,FaInstagram,FaYoutube,FaTwitter,FaLinkedin} from 'react-icons/fa'
+import {FaFacebookF,FaInstagram,FaYoutube,FaTwitter,FaLinkedinIn} from 'react-icons/fa'
 import {
     FooterContainer,
     FooterWrap,
@@ -65,15 +65,15 @@ const Footer = () => {
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>
-                        eureka
+                        @
                     </SocialLogo>
-                    <WebsiteRights>eureka {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                    <WebsiteRights>Gonzalo Barrios {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href='//www.instagram.com/' target='_blank' aria-label='Instagram'>
                             <FaInstagram />
                         </SocialIconLink>
                         <SocialIconLink href='//www.facebook.com/' target='_blank' aria-label='Facebook'>
-                            <FaFacebook />
+                            <FaFacebookF />
                         </SocialIconLink>
                         <SocialIconLink href='//www.youtube.com/' target='_blank' aria-label='Youtube'>
                             <FaYoutube />
@@ -82,7 +82,7 @@ const Footer = () => {
                             <FaTwitter />
                         </SocialIconLink>
                         <SocialIconLink href='//www.linkedin.com/' target='_blank' aria-label='LinkedIn'>
-                            <FaLinkedin />
+                            <FaLinkedinIn />
                         </SocialIconLink>
                     </SocialIcons>
                 </SocialMediaWrap>

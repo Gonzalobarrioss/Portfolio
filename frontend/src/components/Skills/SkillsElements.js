@@ -1,5 +1,18 @@
 import styled from 'styled-components'
 
+export const SkillsH1 = styled.h1`
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 64px;
+    padding: 24px 0;
+    text-align: center;
+
+    @media screen and (max-width: 480px){
+        font-size: 2rem;
+    }
+`
+
 export const SkillsSection = styled.div`
     position: relative;
     display: flex;

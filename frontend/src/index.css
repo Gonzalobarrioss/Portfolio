@@ -9,5 +9,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #0d0d0d;
+    line-height: 1.3;
   }
   

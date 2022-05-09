@@ -2,9 +2,22 @@ import styled, { keyframes } from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
+export const Logo = styled.svg`
+    display: fixed;
+   
+    width: 100%;
+    height: 100%;
+    
+    polygon{
+        stroke: #fff;
+        stroke-width: 5;
+    }
+`
+
 export const Nav = styled.nav`
     background: ${({scrollnav}) => (scrollnav ? 'transparent' : '#0d0d0d')};
     height: 80px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +35,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -31,12 +45,13 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(LinkR)`
-    color: #fff;
-    justify-self: flex-start;
-    cursor: pointer;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;    
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;

@@ -9,7 +9,8 @@ import {
     NavLinks,
     GlowingText,
     NavBtn,
-    NavBtnLink
+    NavBtnLink,
+    Logo
 } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
@@ -45,9 +46,13 @@ const Navbar = ({toggle}) => {
         <IconContext.Provider value={{color: '#fff'}} >
             <Nav scrollnav={scrollNav}>
                 <NavbarContainer>
+                        
+                    
                     <NavLogo to='/' onClick={toggleHome} scrollnav={scrollNav}>
-                        <GlowingText>eureka</GlowingText>
+                        <GlowingText>@</GlowingText>
+                        
                     </NavLogo>
+                    
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
