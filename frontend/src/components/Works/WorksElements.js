@@ -10,7 +10,6 @@ export const WorksWrapper = styled.div`
     flex-direction: column;
     box-sizing: border-box;
     width: 100%;
-    background: #0d0d0d;
 `
 
 export const WorksContainer = styled.div`
@@ -96,16 +95,43 @@ export const VideoBx = styled.video`
     
 `
 
-export const WorksH1 = styled.h1`
-    font-size: 2.5rem;
+export const WorksTitle = styled.p`
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    line-height: 16px;
+    text-transform: uppercase;
     color: #fff;
     margin-top: 0;
-    margin-bottom: 64px;
-    padding: 24px 0;
-    text-align: center;
+    margin-bottom: 16px;
+    padding: 0;
+    text-shadow: 0 0 10px #00b3ff, 
+                0 0 20px #00b3ff, 
+                0 0 40px #00b3ff, 
+                0 0 80px #00b3ff, 
+                0 0 120px #00b3ff, 
+                0 0 200px #00b3ff, 
+                0 0 300px #00b3ff;
 
-    @media screen and (max-width: 480px){
-        font-size: 2rem;
+    &:after{
+        content: '';
+        display: block;
+        position: relative;
+        top: 5px;
+        width: 350px;
+        height: 1px;
+        margin-left: 20px;
+        background: #8892b0;
+                
+        @media screen and (max-width: 600px) {
+            margin-left: 10px;
+        }
+                
+        @media screen and (max-width: 768px) {
+            width: 350px;
+        }
     }
 `
 export const WorksH2 = styled.h2`

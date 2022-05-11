@@ -1,26 +1,54 @@
 import styled from 'styled-components'
 
-export const SkillsH1 = styled.h1`
-    font-size: 2.5rem;
+export const SkillsTitle = styled.p`
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    line-height: 16px;
+    text-transform: uppercase;
     color: #fff;
     margin-top: 0;
-    margin-bottom: 64px;
-    padding: 24px 0;
-    text-align: center;
+    margin-bottom: 16px;
+    padding: 0;
+    text-shadow: 0 0 10px #00b3ff, 
+                0 0 20px #00b3ff, 
+                0 0 40px #00b3ff, 
+                0 0 80px #00b3ff, 
+                0 0 120px #00b3ff, 
+                0 0 200px #00b3ff, 
+                0 0 300px #00b3ff;
 
-    @media screen and (max-width: 480px){
-        font-size: 2rem;
+    &:after{
+        content: '';
+        display: block;
+        position: relative;
+        top: 5px;
+        width: 300px;
+        height: 1px;
+        margin-left: 20px;
+        background: #8892b0;
+                
+        @media screen and (max-width: 600px) {
+            margin-left: 10px;
+        }
+                
+        @media screen and (max-width: 768px) {
+            width: 355px;
+        }
     }
+}
 `
 
 export const SkillsSection = styled.div`
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 40px 0;
     min-height: 100vh;
-    background: #0d0d0d;
+    background: #0a192f;
 
     &:before{
         content: '';
@@ -34,10 +62,10 @@ export const SkillsSection = styled.div`
 `
 
 export const SkillsContainer = styled.div`
-    width: 900px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around;        
 `
 export const SkillsText = styled.text`
     position: absolute;

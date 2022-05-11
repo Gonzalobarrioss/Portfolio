@@ -5,7 +5,7 @@ import {
     HeroContainer, 
     HeroH2,
     HeroContent, 
-    HeroH1, 
+    HeroH3, 
     HeroP, 
     HeroBtnWrapper, 
     ArrowForward, 
@@ -27,17 +27,18 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
         <HeroContent>
-            <HeroH2>Hola, mi nombre es </HeroH2>
+            <HeroH3>Hola, mi nombre es </HeroH3>
                 <HeroGlowingText>
-                    <HeroGlowingLetter>G</HeroGlowingLetter>
+                    {/*<HeroGlowingLetter>G</HeroGlowingLetter>
                     <HeroGlowingLetter>O</HeroGlowingLetter>
                     <HeroGlowingLetter>N</HeroGlowingLetter>
                     <HeroGlowingLetter>Z</HeroGlowingLetter>
                     <HeroGlowingLetter>A</HeroGlowingLetter>
                     <HeroGlowingLetter>L</HeroGlowingLetter>
-                    <HeroGlowingLetter>O</HeroGlowingLetter>
+  <HeroGlowingLetter>O</HeroGlowingLetter>*/}
+                    Gonzalo Barrios.
                 </HeroGlowingText>
-                <HeroH1>Hago paginas creativas</HeroH1>
+                <HeroH2>Hago paginas creativas</HeroH2>
             <HeroP>
                 Soy un diseñador web especializado en landing page & 4 section web.
                 CEO @eureka

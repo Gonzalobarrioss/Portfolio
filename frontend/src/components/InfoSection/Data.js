@@ -1,11 +1,11 @@
-export const homeObjOne = {
+export const about = {
     id: 'about',
-    lightBg: false,
+    blueBg: false,
     imgStart: false,
     lightText: true,
     lightTextDesc: true,
     topLine: 'about me',
-    headline: 'Web is fun',
+    headline: '',
     description: `Hola! Mi nombre es Gonzalo y hago cosas creativas en la web. 
                 Actualmente me encuentro trabajando como Software Developer, 
                 pero en mis ratos libres me dedico al desarrollo de páginas.

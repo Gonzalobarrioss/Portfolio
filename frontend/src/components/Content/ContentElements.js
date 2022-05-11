@@ -7,6 +7,6 @@ export const ContentContainer = styled.div`
     justify-content: center;
     width: 100%;
     border-box:inherit;
-
+    background: #0a192f;
     max-width: 1600px;
 `

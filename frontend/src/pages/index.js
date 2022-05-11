@@ -2,7 +2,7 @@ import React from 'react'
 
 import HeroSection from '../components/HeroSection/Index'
 import InfoSection from '../components/InfoSection'
-import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data'
+import { about, homeObjTwo, homeObjThree } from '../components/InfoSection/Data'
 import Services from '../components/Services'
 import Skills from '../components/Skills'
 import Footer from '../components/Footer'
@@ -29,7 +29,7 @@ const Home = () => {
         
           <Main>
             <HeroSection />
-            <InfoSection {...homeObjOne}/>
+            <InfoSection {...about}/>
             <Skills />
             <Works />
             {/*<Services />*/}

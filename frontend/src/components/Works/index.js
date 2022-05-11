@@ -3,7 +3,7 @@ import Tilt from 'react-vanilla-tilt'
 import BankVideo from '../../videos/video.mp4'
 import { 
     WorksContainer,
-    WorksH1,
+    WorksTitle,
     WorksWrapper,
     WorksCard,
     WorksContent,
@@ -19,11 +19,10 @@ const Works = () => {
 
 
   return (
-    <WorksWrapper id='works'>
-        <WorksH1>My Works</WorksH1>
-        
-    <WorksContainer>
-        <Tilt style={{position:"relative"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
+    <WorksContainer id='works'>
+        <WorksTitle>Works</WorksTitle>
+        <WorksWrapper>
+            <Tilt style={{position:"relative"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
             <WorksCard>  
                 
                     <ImgBx />
@@ -52,9 +51,9 @@ const Works = () => {
                     <a href='https://google.com'>Read More</a>
                 </WorksContent>
             </WorksCard>
-        </WorksContainer>
+        </WorksWrapper>
       
-    </WorksWrapper>
+    </WorksContainer>
   )
 }
 

@@ -34,10 +34,20 @@ export const HeroContent = styled.div`
     }
 `
 
-export const HeroH1 = styled.h1`
+export const HeroH3 = styled.h3`
+    font-family: consolas;
     color: #fff;
-    text-align: start;
+    line-height: 1em;
+    text-decoration: none;
+    font-size: 1em;
+
     
+`
+
+export const HeroH2 = styled.h2`
+    color: #8892b0;
+    text-align: start;
+
     margin: 0;
 
     @media screen and (max-width: 768px){
@@ -49,17 +59,9 @@ export const HeroH1 = styled.h1`
     }
 `
 
-export const HeroH2 = styled.h2`
-    font-family: consolas;
-    color: #fff;
-    line-height: 1em;
-    text-decoration: none;
-    font-size: 1em;
-`
-
 export const HeroP = styled.p`
     margin-top: 24px;
-    color: #fff;
+    color: #8892b0;
     font-size: 24px;
     text-align: start;
     max-width: 600px;
@@ -119,7 +121,6 @@ const animate2 = keyframes`
                     0 0 80px #00b3ff,
                     0 0 120px #00b3ff,
                     0 0 200px #00b3ff;                    
-        
     }
 `
 
@@ -153,13 +154,8 @@ export const HeroGlowingLetter = styled.span`
 
     @media screen and (max-width: 768px){
         animation: none;
-        color: #fff;
-        text-shadow: 0 0 10px #00b3ff,
-                    0 0 20px #00b3ff,
-                    0 0 40px #00b3ff,
-                    0 0 80px #00b3ff,
-                    0 0 120px #00b3ff,
-                    0 0 200px #00b3ff;
+        color: #ccd6f6;
+        
         letter-spacing: 2px;
     }
 
@@ -168,13 +164,17 @@ export const HeroGlowingText = styled.h1`
     padding: 0; 
     margin: 0;
     font-size: clamp(40px, 8vw, 80px);
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     text-align: start;
-    color: #111;
+    color: #0d0d0d;
     animation: ${animate2} 3s linear infinite;
     animation-delay: 4s;
 
-    
+    @media screen and (max-width: 768px){
+        letter-spacing: 0;
+        color: #ccd6f6;
+        animation: none;
+    }
 `
 
 

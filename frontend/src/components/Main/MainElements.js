@@ -9,12 +9,16 @@ export const MainContainer = styled.div`
     min-height: 100vh;
     padding: 200px 150px;
 
-    @media (max-width: 768px){
+    @media (max-width: 480px){
         padding: 0 25px;
     }
 
-    @media (min-width: 769px) and (max-width: 1080px){
-        padding: 0 40px;
+    @media (min-width: 481px) and (max-width: 767px){
+        padding: 0 50px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1080px){
+        padding: 0 100px;
     }
     
 `

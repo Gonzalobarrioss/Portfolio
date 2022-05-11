@@ -8,14 +8,16 @@ import {
     SkillsNumber,
     SkillsText,
     SkillsH2,
-    SkillsH1
+    SkillsTitle
 } from './SkillsElements'
 
 function Skills() {
   return (
       
       <SkillsSection id='skills'>
-        <SkillsContainer >
+          <SkillsTitle>Skills</SkillsTitle>
+        <SkillsContainer id='skills'>
+            
             <SkillsCard>
                 <SkillsBox>
                     <div>

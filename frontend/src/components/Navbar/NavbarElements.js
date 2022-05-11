@@ -15,7 +15,7 @@ export const Logo = styled.svg`
 `
 
 export const Nav = styled.nav`
-    background: ${({scrollnav}) => (scrollnav ? 'transparent' : '#0d0d0d')};
+    background: ${({scrollnav}) => (scrollnav ? 'transparent' : '#0a192f')};
     height: 80px;
     width: 100%;
     display: flex;
