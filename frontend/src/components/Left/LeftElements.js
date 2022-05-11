@@ -46,6 +46,7 @@ export const List = styled.ul`
 
 export const SocialMediaLeft = styled.a`
     padding: 10px;
+    font-size: 24px;
     display: inline-block;
     text-decoration: none;
     color: inherit;

@@ -7,15 +7,22 @@ import {
     NavMenu, 
     NavItem, 
     NavLinks,
-    GlowingText
+    GlowingText,
+    NavBtn,
+    NavBtnLink
 } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faToggleOff, faToggleOn } from "@fortawesome/free-solid-svg-icons"
+
+
 const Navbar = ({toggle}) => {
 
     const [scrollNav, setScrollNav] = useState(false)
+    const [isClicked, setIsClicked] = useState(false)
 
     const changeNav = () => {
         if (window.scrollY >= 80){
@@ -34,9 +41,7 @@ const Navbar = ({toggle}) => {
       }
     }, [])
     
-    const toggleHome = () => {
-        scroll.scrollToTop()
-    }
+
 
     return (
         <>
@@ -45,8 +50,10 @@ const Navbar = ({toggle}) => {
                 <NavbarContainer>
                         
                     
-                    <NavLogo to='/' onClick={toggleHome}>
-                        <GlowingText>@</GlowingText>
+                    <NavLogo>
+                        <FontAwesomeIcon icon={isClicked ? faToggleOn : faToggleOff }  onClick={() => setIsClicked(prev => !prev)}  />
+                        
+                        {/*<GlowingText>@</GlowingText>*/}
                     </NavLogo>
                     
                     <MobileIcon onClick={toggle}>
@@ -55,18 +62,7 @@ const Navbar = ({toggle}) => {
 
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='skills'
-                            smooth={true} 
-                            duration={500}
-                            spy={true}
-                            exact="true"
-                            offset={-80}
-                            >
-                                Skills
-                            </NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='about' 
+                            <NavLinks to='about'
                             smooth={true} 
                             duration={500}
                             spy={true}
@@ -74,6 +70,17 @@ const Navbar = ({toggle}) => {
                             offset={-80}
                             >
                                 About
+                            </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='skills' 
+                            smooth={true} 
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}
+                            >
+                                Skills
                             </NavLinks>
                         </NavItem>
 
@@ -99,9 +106,11 @@ const Navbar = ({toggle}) => {
                                 Contact
                             </NavLinks>
                         </NavItem>
-                        
+                        <NavBtn>
+                            <NavBtnLink to='/'>Descarga PDF</NavBtnLink>
+                        </NavBtn>
                     </NavMenu>
-
+                    
                 </NavbarContainer>
             </Nav>
         </IconContext.Provider>

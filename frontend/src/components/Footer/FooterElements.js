@@ -24,14 +24,23 @@ export const WebsiteRights = styled.small`
     font-size:16px;
     color: #8892b0;
     margin: 16px 0;
+
+    @media (min-width: 769px){
+        font-size: 18px;
+    }
 `
 export const SocialIcons = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 240px;
+
+    @media (min-width: 769px){
+        display: none;
+    }
 `
 export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
+    
 `

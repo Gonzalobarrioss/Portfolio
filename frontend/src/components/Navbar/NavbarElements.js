@@ -14,11 +14,12 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 10;
 
+        
     transform:  ${({scrollnav}) => (scrollnav ? 'translateY(-100px)' : 'translateY(0%)')};
     transition: 0.75s;
     
 
-    @media screen and (max-width: 960px){
+    @media screen and (min-width: 769px){
         transition: 0.8s all ease;
     }
 `
@@ -35,8 +36,10 @@ export const NavbarContainer = styled.div`
     
 `
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.div`
     display: flex;
+    color: #fff;
+    font-size: 24px;
     align-items: center;
     justify-content: center;    
     cursor: pointer;
@@ -46,8 +49,34 @@ export const NavLogo = styled(LinkR)`
     
     font-weight: bold;
     text-decoration: none;
+`
 
-    
+export const NavBtn = styled.nav`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+       display: none;
+    }
+`
+
+export const NavBtnLink = styled(LinkR)`
+    border-radius: 15px;
+    background: #0a192f;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+    }
 `
 
 export const MobileIcon = styled.div`
@@ -60,30 +89,20 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #fff;
     
-    @media screen and (max-width: 768px) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
-        cursor: pointer;
-        color: #fff;
+    @media screen and (min-width: 769px) {
+        display: none;
     }
 `
 
 export const NavMenu = styled.ul`
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     top: 0;
-    left: 50%;
-    right: 50%;
     list-style: none;
     text-align: center;
-    margin: 0 10px;
-    padding:0 20px;
+    margin: 0;
+    padding: 0;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -98,6 +117,7 @@ export const NavLinks = styled(LinkS)`
     display: flex;
     align-items: center;
     text-decoration: none;
+    font-size: 1em;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;

@@ -49,6 +49,7 @@ export const SocialMediaRight = styled.a`
     padding: 10px;
     display: inline-block;
     text-decoration: none;
+    font-size: 24px;
     color: inherit;
     position: relative;
     transition: 0.5s;

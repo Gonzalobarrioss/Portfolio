@@ -47,16 +47,12 @@ export const HeroH3 = styled.h3`
 export const HeroH2 = styled.h2`
     color: #8892b0;
     text-align: start;
+    font-size: clamp(40px, 8vw, 80px);
+    line-height: 0.9;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
 
-    margin: 0;
-
-    @media screen and (max-width: 768px){
-        font-size: 40px;
-    }
-
-    @media screen and (max-width: 480px){
-        font-size: 32px;
-    }
 `
 
 export const HeroP = styled.p`
@@ -163,17 +159,16 @@ export const HeroGlowingLetter = styled.span`
 export const HeroGlowingText = styled.h1`
     padding: 0; 
     margin: 0;
+    font-weight: 600;
+    line-height: 1.1;
     font-size: clamp(40px, 8vw, 80px);
-    letter-spacing: 1px;
     text-align: start;
-    color: #0d0d0d;
-    animation: ${animate2} 3s linear infinite;
+    color: #ccd6f6;
     animation-delay: 4s;
 
-    @media screen and (max-width: 768px){
-        letter-spacing: 0;
+    @media screen and (min-width: 769px){
         color: #ccd6f6;
-        animation: none;
+       /* animation: ${animate2} 3s linear infinite;*/
     }
 `
 
