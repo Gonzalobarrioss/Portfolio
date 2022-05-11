@@ -11,7 +11,7 @@ function Header() {
     }
   return (
     <HeaderContainer>
-        <Sidebar isOpen={isOpen} toggle={toggle} />
+      {/*  <Sidebar isOpen={isOpen} toggle={toggle} /> */} 
         <Navbar toggle={toggle} />
     </HeaderContainer>
   )

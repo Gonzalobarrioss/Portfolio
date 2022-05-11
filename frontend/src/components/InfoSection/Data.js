@@ -4,7 +4,7 @@ export const about = {
     imgStart: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'about me',
+    topLine: ' about me',
     headline: '',
     description: `Hola! Mi nombre es Gonzalo y hago cosas creativas en la web. 
                 Actualmente me encuentro trabajando como Software Developer, 

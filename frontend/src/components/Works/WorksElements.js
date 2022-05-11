@@ -1,25 +1,21 @@
 import styled from 'styled-components'
-import ImgRickMorty from '../../images/rickmorty.jpg'
 
 
 export const WorksWrapper = styled.div`
-    position: relative;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+
 `
 
-export const WorksContainer = styled.div`
-    
+export const WorksContainer = styled.div`    
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    z-index: 1;
+    padding: 40px 0;
+    min-height: 100vh;
 `
 export const WorksContent = styled.div`
     padding: 20px;
@@ -46,14 +42,22 @@ export const ImgBx = styled.div`
     border-radius: 15px;
     width: 100%;
     height: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+}
 `
 
 export const WorksCard = styled.div`
     box-sizing: border-box;
     position: relative;
-    width: 280px;
-    height: 400px;
-    margin: 30px;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    image-rendering: auto;
+    margin: 15px 0;
     border-radius: 15px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.1);
@@ -65,13 +69,17 @@ export const WorksCard = styled.div`
     backdrop-filter: blur(5px);
     overflow: hidden;
 
-    &:nth-child(1){
-        ${ImgBx}{
-            background: no-repeat center/100% url("${ImgRickMorty}");
-        }
+    @media (min-width: 375px) {
+        height: 450px;
     }
 
-   
+    @media (min-width: 425px) {
+        height: 500px;
+    }
+
+    @media (min-width: 480px) {
+        height: 600px;
+    }
 
     &:hover{
         
@@ -88,7 +96,7 @@ export const WorksCard = styled.div`
 export const VideoBx = styled.video`
     position: absolute;
     border-radius: 15px;
-    width: 100%:
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -96,7 +104,6 @@ export const VideoBx = styled.video`
 `
 
 export const WorksTitle = styled.p`
-    display: flex;
     position: relative;
     font-size: 16px;
     font-weight: 700;
@@ -104,7 +111,6 @@ export const WorksTitle = styled.p`
     line-height: 16px;
     text-transform: uppercase;
     color: #fff;
-    margin-top: 0;
     margin-bottom: 16px;
     padding: 0;
     text-shadow: 0 0 10px #00b3ff, 
@@ -117,21 +123,23 @@ export const WorksTitle = styled.p`
 
     &:after{
         content: '';
-        display: block;
+        display: inline-block;
         position: relative;
-        top: 5px;
-        width: 350px;
+        top: -5px;
+        width: 100%;
         height: 1px;
-        margin-left: 20px;
         background: #8892b0;
-                
-        @media screen and (max-width: 600px) {
-            margin-left: 10px;
-        }
-                
-        @media screen and (max-width: 768px) {
-            width: 350px;
-        }
+    }
+    
+    &:before{
+        content: '03.';
+        display: inline-block;
+        position: relative;
+        left: 0;
+        top: 0;
+        color: #fff;
+        font-size: 16px;
+
     }
 `
 export const WorksH2 = styled.h2`

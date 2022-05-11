@@ -7,10 +7,7 @@ import {
     NavMenu, 
     NavItem, 
     NavLinks,
-    GlowingText,
-    NavBtn,
-    NavBtnLink,
-    Logo
+    GlowingText
 } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
@@ -50,7 +47,6 @@ const Navbar = ({toggle}) => {
                     
                     <NavLogo to='/' onClick={toggleHome}>
                         <GlowingText>@</GlowingText>
-                        
                     </NavLogo>
                     
                     <MobileIcon onClick={toggle}>
@@ -105,10 +101,6 @@ const Navbar = ({toggle}) => {
                         </NavItem>
                         
                     </NavMenu>
-                    {/*
-                    <NavBtn>
-                        <NavBtnLink to='/signin'>Sing In</NavBtnLink>
-                    </NavBtn>*/}
 
                 </NavbarContainer>
             </Nav>

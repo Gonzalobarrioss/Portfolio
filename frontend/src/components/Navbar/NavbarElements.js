@@ -2,21 +2,9 @@ import styled, { keyframes } from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
-export const Logo = styled.svg`
-    display: fixed;
-   
-    width: 100%;
-    height: 100%;
-    
-    polygon{
-        stroke: #fff;
-        stroke-width: 5;
-    }
-`
-
 export const Nav = styled.nav`
     background: ${({scrollnav}) => (scrollnav ? 'transparent' : '#0a192f')};
-    height: 80px;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,7 +13,6 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-    
 
     transform:  ${({scrollnav}) => (scrollnav ? 'translateY(-100px)' : 'translateY(0%)')};
     transition: 0.75s;
@@ -40,11 +27,11 @@ export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
-    max-width: 1800px;
+    height:100%;
+    padding: 0 16px;
+    max-width: 1600px;
     
 `
 
@@ -120,33 +107,7 @@ export const NavLinks = styled(LinkS)`
         
     }
 `
-export const NavBtn = styled.nav`
-    display: flex;
-    align-items: center;
 
-    @media screen and (max-width: 768px) {
-       display: none;
-    }
-`
-
-export const NavBtnLink = styled(LinkR)`
-    border-radius: 50px;
-    background: #01bf71;
-    white-space: nowrap;
-    padding: 10px 22px;
-    color: #010606;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
-    }
-`
 export const NavLink = styled(LinkR)`
     color: #fff;
     display: flex;
@@ -180,12 +141,18 @@ const animate = keyframes`
 export const GlowingText = styled.h3`
     position: relative;
     letter-spacing: 2px;
-    color: #0e3742;
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4,
+            0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 160px #03bcf4;
     text-transform: uppercase;
     text-align: center;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
     line-height: 0.75em;
-    animation: ${animate} 10s linear infinite;
+    animation: ${animate} 10s linear;
 `
 
 

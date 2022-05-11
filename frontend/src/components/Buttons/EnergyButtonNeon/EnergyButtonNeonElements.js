@@ -45,6 +45,10 @@ export const Button = styled.a`
     }
 
     span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         position: relative;
         z-index: 100;
     }

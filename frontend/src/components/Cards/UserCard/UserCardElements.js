@@ -6,7 +6,6 @@ export const CardContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 40px 0;
 `
 export const CardContent = styled.div`
     position: absolute;
@@ -60,7 +59,7 @@ export const Card = styled.div`
     position: relative;
     width: 300px;
     height: 400px;
-    margin: 20px;
+    margin: 10px;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -88,8 +87,10 @@ export const Card = styled.div`
 export const ImgBx = styled.div`
     width: 100%;
     height: 100%;
+    
 
     img{
+        
         width: 300px;
         height: 400px;
         object-fit: cover;

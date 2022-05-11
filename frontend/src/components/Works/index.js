@@ -14,6 +14,9 @@ import {
     VideoBx
 } from './WorksElements'
 
+import ImgRickMorty from '../../images/rickmorty.jpg'
+
+
 const Works = () => {
 
 
@@ -22,10 +25,12 @@ const Works = () => {
     <WorksContainer id='works'>
         <WorksTitle>Works</WorksTitle>
         <WorksWrapper>
-            <Tilt style={{position:"relative"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
-            <WorksCard>  
+            <Tilt style={{position:"relative", width: "100%", height: "100%"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
+                <WorksCard>  
                 
-                    <ImgBx />
+                    <ImgBx>
+                        <img src={ImgRickMorty} alt='Rick&Morty' />
+                    </ImgBx>
                     <WorksContent>
                         <WorksH3>Rick & Morty</WorksH3>
                         <WorksP>React Project whit Public API</WorksP>
@@ -33,7 +38,7 @@ const Works = () => {
                     </WorksContent>
                 </WorksCard>
             </Tilt>
-            <Tilt style={{position:"relative"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
+            <Tilt style={{position:"relative", width: "100%", height: "100%"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
             <WorksCard>
                 <VideoBx autoPlay loop src={BankVideo} muted type='video/mp4' style={{width:'100%', height: '100%'}}/>
                 <WorksContent>
@@ -43,6 +48,7 @@ const Works = () => {
                 </WorksContent>
             </WorksCard>
             </Tilt>
+            <Tilt style={{position:"relative", width: "100%", height: "100%"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
             <WorksCard>
                 <ImgBx />
                 <WorksContent>
@@ -51,6 +57,7 @@ const Works = () => {
                     <a href='https://google.com'>Read More</a>
                 </WorksContent>
             </WorksCard>
+            </Tilt>
         </WorksWrapper>
       
     </WorksContainer>

@@ -39,9 +39,7 @@ const InfoSection = (props) => {
     } = props
 
     return (
-        <>
             <InfoContainer lightBg={lightBg} id={id}>
-                <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper>
@@ -70,15 +68,9 @@ const InfoSection = (props) => {
                         </Column1>
                         <Column2>
                             <UserCard />
-                            
-                            {/* <ImgWrap>
-                                <Img src={img} alt={alt}/>
-                            </ImgWrap> */}
                         </Column2>
                     </InfoRow>
-                </InfoWrapper>
             </InfoContainer>   
-        </>
   )
 }
 

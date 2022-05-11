@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const SkillsTitle = styled.p`
-    display: flex;
     position: relative;
     font-size: 16px;
     font-weight: 700;
@@ -9,7 +8,6 @@ export const SkillsTitle = styled.p`
     line-height: 16px;
     text-transform: uppercase;
     color: #fff;
-    margin-top: 0;
     margin-bottom: 16px;
     padding: 0;
     text-shadow: 0 0 10px #00b3ff, 
@@ -22,23 +20,24 @@ export const SkillsTitle = styled.p`
 
     &:after{
         content: '';
-        display: block;
+        display: inline-block;
         position: relative;
-        top: 5px;
-        width: 300px;
+        top: -5px;
+        width: 100%;
         height: 1px;
-        margin-left: 20px;
         background: #8892b0;
-                
-        @media screen and (max-width: 600px) {
-            margin-left: 10px;
-        }
-                
-        @media screen and (max-width: 768px) {
-            width: 355px;
-        }
     }
-}
+    
+    &:before{
+        content: '02.';
+        display: inline-block;
+        position: relative;
+        left: 0;
+        top: 0;
+        color: #fff;
+        font-size: 16px;
+
+    }
 `
 
 export const SkillsSection = styled.div`
@@ -48,17 +47,6 @@ export const SkillsSection = styled.div`
     justify-content: center;
     padding: 40px 0;
     min-height: 100vh;
-    background: #0a192f;
-
-    &:before{
-        content: '';
-        position: absolute;
-        top: 45%;
-        width: 100%;
-        height: 50px;
-        background: #2bd2ff;
-        filter: blur(2px);
-    }
 `
 
 export const SkillsContainer = styled.div`

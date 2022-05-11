@@ -31,7 +31,7 @@ const Footer = () => {
                             <FaLinkedinIn />
                         </SocialIconLink>
                     </SocialIcons>
-                    <WebsiteRights>Gonzalo Barrios {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                    <WebsiteRights>Powered by Gonzalo Barrios {new Date().getFullYear()}</WebsiteRights>
 
                 </SocialMediaWrap>
         </FooterWrap>
