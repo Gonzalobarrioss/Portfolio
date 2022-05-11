@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaFacebookF,FaInstagram,FaYoutube,FaTwitter,FaLinkedinIn} from 'react-icons/fa'
+import {FaFacebookF,FaInstagram,FaTwitter,FaLinkedinIn, FaTwitch} from 'react-icons/fa'
 import {
     FooterWrap,
     SocialMediaWrap,
@@ -21,11 +21,11 @@ const Footer = () => {
                         <SocialIconLink href='//www.facebook.com/' target='_blank' aria-label='Facebook'>
                             <FaFacebookF />
                         </SocialIconLink>
-                        <SocialIconLink href='//www.youtube.com/' target='_blank' aria-label='Youtube'>
-                            <FaYoutube />
-                        </SocialIconLink>
                         <SocialIconLink href='//www.twitter.com/' target='_blank' aria-label='Twitter'>
                             <FaTwitter />
+                        </SocialIconLink>
+                        <SocialIconLink href='//www.twitch.com/' target='_blank' aria-label='Twitch'>
+                            <FaTwitch />
                         </SocialIconLink>
                         <SocialIconLink href='//www.linkedin.com/' target='_blank' aria-label='LinkedIn'>
                             <FaLinkedinIn />
