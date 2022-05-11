@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.51478255.css",
-    "main.js": "/Portfolio/static/js/main.504bc7bb.js",
+    "main.js": "/Portfolio/static/js/main.0b8bf616.js",
     "static/media/video.mp4": "/Portfolio/static/media/video.7d1ea6a94986d5c2a068.mp4",
     "static/media/img1.jpg": "/Portfolio/static/media/img1.7edfddef6d3da8a1b1cf.jpg",
     "static/media/rickmorty.jpg": "/Portfolio/static/media/rickmorty.c5460a6681f5c0ad56e1.jpg",
@@ -13,10 +13,10 @@
     "static/media/credit_card.svg": "/Portfolio/static/media/credit_card.f0df71d4f1f810dc491f95980e9da942.svg",
     "index.html": "/Portfolio/index.html",
     "main.51478255.css.map": "/Portfolio/static/css/main.51478255.css.map",
-    "main.504bc7bb.js.map": "/Portfolio/static/js/main.504bc7bb.js.map"
+    "main.0b8bf616.js.map": "/Portfolio/static/js/main.0b8bf616.js.map"
   },
   "entrypoints": [
     "static/css/main.51478255.css",
-    "static/js/main.504bc7bb.js"
+    "static/js/main.0b8bf616.js"
   ]
 }
