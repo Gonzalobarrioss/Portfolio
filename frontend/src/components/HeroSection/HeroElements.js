@@ -6,6 +6,8 @@ export const HeroContainer = styled.div`
     padding: 0;
     width: 100%;
     max-width: 1000px;
+    display: flex;
+    position: relative;
 `
 
 export const HeroBtnWrapper = styled.div`
@@ -13,17 +15,19 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    
+    
 `
 
 
 export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: start;
     min-height: 100vh;
     width: 100%;
-    
+    justify-content: center;
     padding: 0;
     margin: 0;
     z-index: 1;
@@ -41,6 +45,28 @@ export const HeroH3 = styled.h3`
     text-decoration: none;
     font-size: 1em;
 
+    @media (min-width: 1440px) {
+        //font-size: clamp(80px, 18vw, 100px);
+        font-size: 1.8em;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1439px){
+        //font-size: clamp(40px, 8vw, 80px);
+        font-size: 1.5em;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        //font-size: clamp(40px, 8vw, 80px);
+        font-size: 1.3em;
+    }
+
+    @media screen and (max-width: 424px){
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 374px){
+        font-size: 12px;
+    }
     
 `
 
@@ -53,21 +79,55 @@ export const HeroH2 = styled.h2`
     margin-bottom: 5px;
     font-weight: 600;
 
+    @media (min-width: 1440px) {
+        //font-size: clamp(80px, 18vw, 100px);
+    }
+
+    @media (min-width: 1024px) and (max-width: 1439px){
+        font-size: 56px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        font-size: 46px;
+    }
+
+    @media screen and (max-width: 424px){
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 374px){
+        font-size: 24px;
+    }
 `
 
 export const HeroP = styled.p`
-    margin-top: 24px;
+    margin-top: 10px;
     color: #8892b0;
     font-size: 24px;
     text-align: start;
     max-width: 600px;
+    padding: 0;
 
-    @media screen and (max-width: 768px){
-        font-size: 24px;
+    
+    @media (min-width: 1440px) {
+        //font-size: clamp(80px, 18vw, 100px);
     }
 
-    @media screen and (max-width: 480px){
-        font-size: 18px;
+    @media (min-width: 1024px) and (max-width: 1439px){
+        font-size: 32px;
+        margin-top: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        //font-size: clamp(40px, 8vw, 80px);
+    }
+
+    @media screen and (max-width: 424px){
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 374px){
+        font-size: 16px;
     }
 `
 
@@ -76,15 +136,7 @@ export const HeroNeonBtnWrapper = styled.div`
     
 `
 
-export const ArrowForward = styled(MdArrowForward)`
-    margin-left: 8px;
-    font-size: 20px;
-`
 
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-    margin-left: 8px;
-    font-size: 20px;
-`
 
 const animate = keyframes`
     0%,99%{
@@ -123,40 +175,43 @@ const animate2 = keyframes`
 export const HeroGlowingLetter = styled.span`
     margin: 0;
     padding: 0;
-    animation: ${animate} 2s linear;
-    transition: 0.75s;
+    color: #ccd6f6;
+    transition: 0.75s; 
 
-    &:nth-child(1){
-        animation-delay: 0.25s;
-    }
-    &:nth-child(2){
-        animation-delay: 0.5s;
-    }
-    &:nth-child(3){
-        animation-delay: 0.75s;
-    }
-    &:nth-child(4){
-        animation-delay: 1s;
-    }
-    &:nth-child(5){
-        animation-delay: 1.25s;
-    }
-    &:nth-child(6){
-        animation-delay: 1.5s;
-    }
-    &:nth-child(7){
-        animation-delay: 1.75s;
-    }
-
-    @media screen and (max-width: 768px){
-        animation: none;
-        color: #ccd6f6;
+    @media screen and (min-width: 769px){
         
+        animation: ${animate} 2s linear;
         letter-spacing: 2px;
+
+        &:nth-child(1){
+        animation-delay: 0.25s;
+        }
+        &:nth-child(2){
+            animation-delay: 0.5s;
+        }
+        &:nth-child(3){
+            animation-delay: 0.75s;
+        }
+        &:nth-child(4){
+            animation-delay: 1s;
+        }
+        &:nth-child(5){
+            animation-delay: 1.25s;
+        }
+        &:nth-child(6){
+            animation-delay: 1.5s;
+        }
+        &:nth-child(7){
+            animation-delay: 1.75s;
+        }
     }
 
 `
 export const HeroGlowingText = styled.h1`
+
+    //ORIENTADO A MOBILE L (425-768)
+
+
     padding: 0; 
     margin: 0;
     font-weight: 600;
@@ -166,10 +221,76 @@ export const HeroGlowingText = styled.h1`
     color: #ccd6f6;
     animation-delay: 4s;
 
-    @media screen and (min-width: 769px){
-        color: #ccd6f6;
-       /* animation: ${animate2} 3s linear infinite;*/
+    @media (min-width: 1440px) {
+        //font-size: clamp(80px, 18vw, 100px);
+    }
+
+    @media (min-width: 1024px) and (max-width: 1439px){
+        //font-size: clamp(40px, 8vw, 80px);
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        font-size: 48px;
+    }
+
+    @media screen and (max-width: 424px){
+        font-size: 36px;
+    }
+
+    @media screen and (max-width: 374px){
+        font-size: 26px;
+    }
+    
+`
+export const ArrowForward = styled(MdArrowForward)`
+    margin-left: 8px;
+    font-size: 20px;
+    
+
+    @media (min-width: 1440px) {
+        //font-size: clamp(80px, 18vw, 100px);
+    }
+
+    @media (min-width: 1024px) and (max-width: 1439px){
+        //font-size: clamp(40px, 8vw, 80px);
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 424px){
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 374px){
+        margin-left: 4px;
+        font-size: 18px;
     }
 `
 
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+    margin-left: 8px;
+    font-size: 20px;
 
+    @media (min-width: 1440px) {
+        //font-size: clamp(80px, 18vw, 100px);
+    }
+
+    @media (min-width: 1024px) and (max-width: 1439px){
+        //font-size: clamp(40px, 8vw, 80px);
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 424px){
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 374px){
+        margin-left: 4px;
+        font-size: 18px;
+    }
+`

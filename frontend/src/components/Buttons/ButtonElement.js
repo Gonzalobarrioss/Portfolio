@@ -25,7 +25,7 @@ export const Button = styled(Link)`
 
 export const ButtonNeon = styled(Link)`
     position: relative;
-    display: inline-block;
+    display: flex;
     padding: 20px 30px;
     margin-bottom: 10px;
     color: #03e9f4;
@@ -36,6 +36,7 @@ export const ButtonNeon = styled(Link)`
     transition: 0.5s;
     letter-spacing: 4px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    
 
     &:hover{
         background: #03e9f4;
@@ -44,5 +45,20 @@ export const ButtonNeon = styled(Link)`
                 0 0 25px #03e9f4,
                 0 0 50px #03e9f4,
                 0 0 200px #03e9f4;
+    }
+
+    
+
+    @media screen and (min-width: 1024px){
+        font-size: 22px;
+    }
+
+    @media screen and (min-width: 1440px){
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 375px){
+        font-size: 14px;
+        padding: 15px 20px;
     }
 `

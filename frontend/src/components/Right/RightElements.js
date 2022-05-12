@@ -14,10 +14,11 @@ export const RightContainer = styled.div`
         right: 20px;
         left: auto;
     }
+    
     &:before{
         box-sizing: inherit;
     }
-
+ 
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -32,7 +33,6 @@ export const List = styled.ul`
     list-style: none;
     padding: 0;
     margin: 0;
-
 
 
     &:after{
