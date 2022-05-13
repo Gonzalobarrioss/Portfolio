@@ -25,7 +25,7 @@ const HeroSection = () => {
     //<VideoBg autoPlay loop muted src={Video} type='video/mp4' style={{width:'100%', height: '100%'}}/>
     
   return (
-    <HeroContainer id="home">
+    <HeroContainer id="home" >
         <HeroContent>
             <HeroH3>Hola, mi nombre es </HeroH3>
                 <HeroGlowingText>
@@ -40,8 +40,7 @@ const HeroSection = () => {
                 </HeroGlowingText>
                 <HeroH2>Hago paginas creativas</HeroH2>
             <HeroP>
-                Soy un diseñador web especializado en landing page & 4 section web.
-                CEO @eureka
+                Soy un desarrollador web especializado en landing page & 4 section web.
             </HeroP>
             <HeroBtnWrapper>
 

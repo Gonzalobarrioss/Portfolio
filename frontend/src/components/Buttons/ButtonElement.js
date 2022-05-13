@@ -36,7 +36,7 @@ export const ButtonNeon = styled(Link)`
     transition: 0.5s;
     letter-spacing: 4px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-    
+    border-radius: 5px;
 
     &:hover{
         background: #03e9f4;
@@ -48,14 +48,21 @@ export const ButtonNeon = styled(Link)`
     }
 
     
-
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 768px){
         font-size: 22px;
     }
 
-    @media screen and (min-width: 1440px){
-        font-size: 24px;
+    @media screen and (min-width: 1024px){
+        font-size: 28px;
+        padding: 25px 40px;
     }
+
+    @media screen and (min-width: 1440px){
+        font-size: 36px;
+        padding: 30px 50px;
+    }
+
+    
 
     @media screen and (max-width: 375px){
         font-size: 14px;

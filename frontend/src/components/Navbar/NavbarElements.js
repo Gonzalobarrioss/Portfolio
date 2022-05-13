@@ -61,31 +61,98 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkR)`
-    border-radius: 15px;
     background: #0a192f;
     white-space: nowrap;
     padding: 10px 22px;
     color: #fff;
     font-size: 16px;
-    border: 1px solid #fff;
+    border: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: 0.5s;
+    border: 1px solid #fff;
     text-decoration: none;
+    display: flex;
+    position: relative;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+        span{
+            &:nth-child(1){
+                transform: scaleY(1);
+                transform-origin: bottom;
+                transition: transform 0.5s;
+            }
+            &:nth-child(2){
+                transform: scaleX(1);
+                transform-origin: left;
+                transition: transform 0.5s;
+            }
+            &:nth-child(3){
+                transform: scaleY(1);
+                transform-origin: bottom;
+                transition: transform 0.5s;
+                transition-delay: 0.5s;
+            }
+            &:nth-child(4){
+                transform: scaleX(1);
+                transform-origin: left;
+                transition: transform 0.5s;
+                transition-delay: 0.5s;
+            }
+        }
+    }
+
+    span{
+        display: block;
+        position: absolute;
+        background: #03e9f4;
+        
+
+        &:nth-child(1){
+            left: -1px;
+            bottom: 0;
+            width: 1px;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.5s;
+        }
+        &:nth-child(2){
+            left: 0;
+            bottom: -1px;
+            width: 100%;
+            height: 1px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s;
+        }
+        &:nth-child(3){
+            right: -1px;
+            bottom: 0;
+            width: 1px;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.5s;
+            transition-delay: 0.5s;
+        }
+        &:nth-child(4){
+            left: 0;
+            top: -1px;
+            width: 100%;
+            height: 1px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s;
+            transition-delay: 0.5s;
+        }
+
     }
 `
 
 export const MobileIcon = styled.div`
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    display: flex;
+    position: relative;
+    font-size: 1.4rem;
     cursor: pointer;
     color: #fff;
     
@@ -110,6 +177,8 @@ export const NavMenu = styled.ul`
 `
 export const NavItem = styled.li`
     height: 80px;
+
+    
 `
 
 export const NavLinks = styled(LinkS)`
@@ -122,9 +191,10 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
     
+    
+
     &.active {
         border-bottom: 3px solid #01bf71;
-        
     }
 `
 

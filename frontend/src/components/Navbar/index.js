@@ -107,7 +107,13 @@ const Navbar = ({toggle}) => {
                             </NavLinks>
                         </NavItem>
                         <NavBtn>
-                            <NavBtnLink to='/'>Descarga PDF</NavBtnLink>
+                            <NavBtnLink to='/'>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Descargar PDF
+                            </NavBtnLink>
                         </NavBtn>
                     </NavMenu>
                     

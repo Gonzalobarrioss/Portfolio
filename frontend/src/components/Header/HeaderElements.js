@@ -13,4 +13,8 @@ export const HeaderContainer = styled.div`
     transition: 0.5s;
     filter: none;
     pointer-events: auto;
+
+    @media (max-width: 767px){
+        height: 60px;
+    }
 `

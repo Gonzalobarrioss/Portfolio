@@ -66,6 +66,54 @@ function Skills() {
                 </SkillsBox>
                 <SkillsText>Javascript</SkillsText>
             </SkillsCard>
+            <SkillsCard>
+                <SkillsBox>
+                    <div>
+                        <SkillsPercent>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <SkillsNumber>
+                                <SkillsH2>80<span>%</span></SkillsH2>
+                            </SkillsNumber>
+                        </SkillsPercent>
+                    </div>
+                </SkillsBox>
+                <SkillsText>MySQL</SkillsText>
+            </SkillsCard>
+            <SkillsCard>
+                <SkillsBox>
+                    <div>
+                        <SkillsPercent>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <SkillsNumber>
+                                <SkillsH2>80<span>%</span></SkillsH2>
+                            </SkillsNumber>
+                        </SkillsPercent>
+                    </div>
+                </SkillsBox>
+                <SkillsText>React</SkillsText>
+            </SkillsCard>
+            <SkillsCard>
+                <SkillsBox>
+                    <div>
+                        <SkillsPercent>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <SkillsNumber>
+                                <SkillsH2>80<span>%</span></SkillsH2>
+                            </SkillsNumber>
+                        </SkillsPercent>
+                    </div>
+                </SkillsBox>
+                <SkillsText>React Native</SkillsText>
+            </SkillsCard>
         </SkillsContainer>
     </SkillsSection>
   )

@@ -12,7 +12,7 @@ import {
 } from './UserCardElements'
 import UserImg from '../../../images/img1.jpg'
 import UserPerfil from '../../../images/perfil.jfif'
-import {FaFacebookF,FaInstagram,FaTwitter} from 'react-icons/fa'
+import {FaFacebookF,FaInstagram,FaLinkedinIn,FaTelegram,FaTwitter} from 'react-icons/fa'
 
 function UserCard() {
     return (
@@ -23,17 +23,17 @@ function UserCard() {
                 </ImgBx>
                 <CardContent>
                     <ContentBx>
-                        <CardH3>Gonzalo Barrios <br /><span>PRO Web Designer</span></CardH3>
+                        <CardH3>Gonzalo Barrios <br /><span>SSR Web Designer</span></CardH3>
                     </ContentBx>
                     <CardList>
                         <CardItem>
-                            <SocialMediaItem href="#"><FaFacebookF /></SocialMediaItem>
+                            <SocialMediaItem href="https://instagram.com/ponja__"><FaInstagram /></SocialMediaItem>
                         </CardItem>
                         <CardItem>
-                            <SocialMediaItem href="#"><FaTwitter /></SocialMediaItem>
+                            <SocialMediaItem href="https://www.linkedin.com/in/gonzaloezequielbarrios/"><FaLinkedinIn /></SocialMediaItem>
                         </CardItem>
                         <CardItem>
-                            <SocialMediaItem href="#"><FaInstagram /></SocialMediaItem>
+                            <SocialMediaItem href="https://t.me/GonzaloBarrios"><FaTelegram /></SocialMediaItem>
                         </CardItem>
                     </CardList>    
                 </CardContent>

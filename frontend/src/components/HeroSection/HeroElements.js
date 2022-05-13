@@ -1,6 +1,17 @@
 import styled, { keyframes } from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
+
+const showContent = keyframes`
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+`
+
+
 export const HeroContainer = styled.div`
     margin: 0;
     padding: 0;
@@ -17,7 +28,7 @@ export const HeroBtnWrapper = styled.div`
     align-items: center;
     justify-content: center;
     
-    
+    animation: ${showContent} ease 7s;
 `
 
 
@@ -44,6 +55,8 @@ export const HeroH3 = styled.h3`
     line-height: 1em;
     text-decoration: none;
     font-size: 1em;
+    
+    animation: ${showContent} 2s ease;
 
     @media (min-width: 1440px) {
         //font-size: clamp(80px, 18vw, 100px);
@@ -73,12 +86,13 @@ export const HeroH3 = styled.h3`
 export const HeroH2 = styled.h2`
     color: #8892b0;
     text-align: start;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(30px, 8vw, 70px);
     line-height: 0.9;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 600;
 
+    animation: ${showContent} 5s ease;
     @media (min-width: 1440px) {
         //font-size: clamp(80px, 18vw, 100px);
     }
@@ -103,23 +117,22 @@ export const HeroH2 = styled.h2`
 export const HeroP = styled.p`
     margin-top: 10px;
     color: #8892b0;
-    font-size: 24px;
+    font-size: 18px;
     text-align: start;
-    max-width: 600px;
     padding: 0;
-
-    
+    max-width: 600px;
+    animation: ${showContent} 6s ease;
     @media (min-width: 1440px) {
-        //font-size: clamp(80px, 18vw, 100px);
+        font-size: 36px;
     }
 
     @media (min-width: 1024px) and (max-width: 1439px){
-        font-size: 32px;
+        font-size: 30px;
         margin-top: 20px;
     }
 
     @media (min-width: 768px) and (max-width: 1023px){
-        //font-size: clamp(40px, 8vw, 80px);
+        font-size: 24px;
     }
 
     @media screen and (max-width: 424px){
@@ -130,13 +143,6 @@ export const HeroP = styled.p`
         font-size: 16px;
     }
 `
-
-
-export const HeroNeonBtnWrapper = styled.div`
-    
-`
-
-
 
 const animate = keyframes`
     0%,99%{
@@ -175,12 +181,11 @@ const animate2 = keyframes`
 export const HeroGlowingLetter = styled.span`
     margin: 0;
     padding: 0;
-    color: #ccd6f6;
     transition: 0.75s; 
 
     @media screen and (min-width: 769px){
         
-        animation: ${animate} 2s linear;
+        animation: ${animate} linear 2s;
         letter-spacing: 2px;
 
         &:nth-child(1){
@@ -219,7 +224,7 @@ export const HeroGlowingText = styled.h1`
     font-size: clamp(40px, 8vw, 80px);
     text-align: start;
     color: #ccd6f6;
-    animation-delay: 4s;
+    animation: ${showContent} linear 3s;
 
     @media (min-width: 1440px) {
         //font-size: clamp(80px, 18vw, 100px);
@@ -248,15 +253,15 @@ export const ArrowForward = styled(MdArrowForward)`
     
 
     @media (min-width: 1440px) {
-        //font-size: clamp(80px, 18vw, 100px);
+        font-size: 42px;    
     }
 
     @media (min-width: 1024px) and (max-width: 1439px){
-        //font-size: clamp(40px, 8vw, 80px);
+        font-size: 32px;
     }
 
     @media (min-width: 768px) and (max-width: 1023px){
-        font-size: 18px;
+        font-size: 22px;
     }
 
     @media screen and (max-width: 424px){
@@ -274,15 +279,15 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     font-size: 20px;
 
     @media (min-width: 1440px) {
-        //font-size: clamp(80px, 18vw, 100px);
+        font-size: 42px;
     }
 
     @media (min-width: 1024px) and (max-width: 1439px){
-        //font-size: clamp(40px, 8vw, 80px);
+        font-size: 32px;
     }
 
     @media (min-width: 768px) and (max-width: 1023px){
-        font-size: 18px;
+        font-size: 22px;
     }
 
     @media screen and (max-width: 424px){

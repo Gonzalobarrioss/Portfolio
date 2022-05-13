@@ -34,7 +34,7 @@ const Works = () => {
                     <WorksContent>
                         <WorksH3>Rick & Morty</WorksH3>
                         <WorksP>React Project whit Public API</WorksP>
-                        <a href='https://gonzalobarrioss.github.io/rick-morty'>See More</a>
+                        <a href='https://gonzalobarrioss.github.io/rick-morty' target='_blank' rel='noreferrer'>Ver proyecto</a>
                     </WorksContent>
                 </WorksCard>
             </Tilt>
@@ -44,7 +44,7 @@ const Works = () => {
                 <WorksContent>
                     <WorksH3>Bank Page</WorksH3>
                     <WorksP>React 4 sections page template</WorksP>
-                    <a href='https://gonzalobarrioss.github.io/rick-morty'>Read More</a>
+                    <a href='https://gonzalobarrioss.github.io/aboutme' target='_blank' rel='noreferrer'>Ver proyecto</a>
                 </WorksContent>
             </WorksCard>
             </Tilt>
@@ -52,9 +52,9 @@ const Works = () => {
             <WorksCard>
                 <ImgBx />
                 <WorksContent>
-                    <WorksH3>Task App</WorksH3>
-                    <WorksP>Lorem ipsum...</WorksP>
-                    <a href='https://google.com'>Read More</a>
+                    <WorksH3>Proximamente</WorksH3>
+                    <WorksP>Aplicacion de tareas en PlayStore</WorksP>
+                    <a href='#'>Read More</a>
                 </WorksContent>
             </WorksCard>
             </Tilt>

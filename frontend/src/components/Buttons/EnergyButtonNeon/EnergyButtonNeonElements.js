@@ -15,6 +15,7 @@ export const Button = styled.a`
     -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
     transition: 0.5s;
     transition-delay: 0s;
+    cursor: pointer;
 
     &:hover{
         transition-delay: 1.5s;

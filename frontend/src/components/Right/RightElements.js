@@ -24,16 +24,14 @@ export const RightContainer = styled.div`
     }
 `
 
-export const List = styled.ul`
+export const EmailContainer = styled.div`
     display:flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    color: #a8b2d1;
     margin: 0;
     padding: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
 
     &:after{
         content: "";
@@ -53,8 +51,41 @@ export const SocialMediaRight = styled.a`
     color: inherit;
     position: relative;
     transition: 0.5s;
-
     &:last-child{
         margin-bottom: 20px;
     }
+`
+export const Email = styled.a`
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+
+
+    -webkit-text-stroke: 1px rgba(255,255,255,0.1);
+
+    &:before{
+        content: 'gonza.barrios.geb@gmail.com';
+        position: absolute;
+        color: #03e9f4;
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+        writing-mode: vertical-rl;
+    }
+
+    &:hover{
+        &:before{
+            height: 100%;
+            
+        }
+    }
+    
+
 `

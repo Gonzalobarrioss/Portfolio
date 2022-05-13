@@ -7,7 +7,7 @@ export const about = {
     topLine: ' about me',
     headline: '',
     description: `Hola! Mi nombre es Gonzalo y hago cosas creativas en la web. 
-                Actualmente me encuentro trabajando como Software Developer, 
+                Actualmente me encuentro trabajando como Software Developer en SAMSA, 
                 pero en mis ratos libres me dedico al desarrollo de páginas.
 
     `,

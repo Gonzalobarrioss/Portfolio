@@ -32,7 +32,6 @@ export const List = styled.ul`
     padding: 0;
     margin: 0;
 
-    
 
     &:after{
         content: "";
@@ -42,6 +41,8 @@ export const List = styled.ul`
         margin: 0 auto;
         background-color: #fff;
     }
+
+    
 `
 
 export const SocialMediaLeft = styled.a`
@@ -50,10 +51,14 @@ export const SocialMediaLeft = styled.a`
     display: inline-block;
     text-decoration: none;
     color: inherit;
-    position: relative;
     transition: 0.5s;
 
     &:last-child{
         margin-bottom: 20px;
     }
+
+    &:hover{
+        transform: scale(1.5);
+    }
+    
 `

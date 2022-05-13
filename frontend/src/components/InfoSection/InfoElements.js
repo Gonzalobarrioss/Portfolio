@@ -4,9 +4,23 @@ export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#0a192f')};
 
+    @media screen and (max-width: 1440px) {
+        padding: 200px 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 150px 0;
+    }
+    
     @media screen and (max-width: 768px) {
         padding: 100px 0;
     }
+
+    @media screen and (max-width: 425px) {
+        padding: 50px 0;
+    }
+
+    
 `
 
 export const InfoRow = styled.div`

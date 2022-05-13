@@ -119,6 +119,30 @@ export const SkillsCard = styled.div`
             stroke-dashoffset: calc(440px - (440px * 95) / 100 );
         }
     }
+    &:nth-child(4){
+        ${SkillsText}{
+            background: #2bd2ff;
+        }
+        svg circle:nth-child(2){
+            stroke-dashoffset: calc(440px - (440px * 80) / 100 );
+        }
+    }
+    &:nth-child(5){
+        ${SkillsText}{
+            background: #2bd2ff;
+        }
+        svg circle:nth-child(2){
+            stroke-dashoffset: calc(440px - (440px * 80) / 100 );
+        }
+    }
+    &:nth-child(6){
+        ${SkillsText}{
+            background: #2bd2ff;
+        }
+        svg circle:nth-child(2){
+            stroke-dashoffset: calc(440px - (440px * 80) / 100 );
+        }
+    }
 `
 
 export const SkillsBox = styled.div`
