@@ -6,7 +6,7 @@ function Right() {
   return (
     <RightContainer>
         <EmailContainer>
-            <Email>gonza.barrios.geb@gmail.com</Email>
+            <Email href='mailto:gonza.barrios.geb@gmail.com'>gonza.barrios.geb@gmail.com</Email>
         </EmailContainer>
     </RightContainer>
   )

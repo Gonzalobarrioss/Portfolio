@@ -56,6 +56,7 @@ export const SocialMediaRight = styled.a`
     }
 `
 export const Email = styled.a`
+    color: #a8b2d1;
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
@@ -66,7 +67,7 @@ export const Email = styled.a`
     line-height: 18px;
     letter-spacing: 0.1em;
     writing-mode: vertical-rl;
-
+    transition: 0.5s;
 
     -webkit-text-stroke: 1px rgba(255,255,255,0.1);
 
@@ -81,9 +82,10 @@ export const Email = styled.a`
     }
 
     &:hover{
+        transform: scale(1.08);
         &:before{
             height: 100%;
-            
+          
         }
     }
     

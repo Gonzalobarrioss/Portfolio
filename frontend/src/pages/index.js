@@ -12,6 +12,7 @@ import Header from '../components/Header'
 import Left from '../components/Left'
 import Right from '../components/Right'
 import Content from '../components/Content'
+import Contact from '../components/Contact'
 import Main from '../components/Main'
 
 const Home = () => {
@@ -37,10 +38,12 @@ const Home = () => {
             <Services />
             <InfoSection {...homeObjThree}/>
             */}
+            <Contact />
           </Main>
+          
         <Footer />
       </Content>
-        
+      
     </LayoutContainer>
   )
 }
