@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderChat = styled.div`
+export const Header = styled.div`
     background: #f9f9f9;
     color: #0a192f;
     padding: 10px;
@@ -8,4 +8,9 @@ export const HeaderChat = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+`
+export const HeaderButton = styled.button`
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
 `

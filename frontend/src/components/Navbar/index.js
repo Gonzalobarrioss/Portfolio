@@ -21,8 +21,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faToggleOff, faToggleOn } from "@fortawesome/free-solid-svg-icons"
 import Contact from '../Contact'
 
+import { store } from '../../redux/store'
+import { showChatbot } from '../../redux/actions/ChatbotAction'
 
-const Navbar = ({toggle}) => {
+const Navbar = ({toggle,}) => {
 
     const [scrollNav, setScrollNav] = useState(false)
     const [isClicked, setIsClicked] = useState(false)
@@ -49,14 +51,13 @@ const Navbar = ({toggle}) => {
         console.log("first", isClicked)
     }
 
-
     return (
         <>
         <IconContext.Provider value={{color: '#fff'}} >
             <Nav scrollnav={scrollNav}>
-                <NavbarContainer className={isClicked ? 'active' : 'inactive'}>
+                <NavbarContainer>
                         
-                    <ToggleContainer className={isClicked ? 'active' : 'inactive'} onClick={ handleClick } >
+                    <ToggleContainer onClick={ () => console.log("click") } >
                         <Indicator />
                     </ToggleContainer>
                    {/* <NavLogo>
@@ -71,7 +72,7 @@ const Navbar = ({toggle}) => {
                         <FaBars />
                     </MobileIcon>
 
-                    <NavMenu className={isClicked ? 'active' : 'inactive'}>
+                    <NavMenu>
                         <NavItem>
                             <NavLinks to='about'
                             smooth={true} 
@@ -107,7 +108,7 @@ const Navbar = ({toggle}) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/'>
+                            <NavLinks to='/' onClick={() => store.dispatch(showChatbot(true))}>
                                 Contact
                             </NavLinks>
                         </NavItem>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Chatbot from 'react-chatbot-kit'
 import 'react-chatbot-kit/build/main.css'
 
@@ -8,33 +8,24 @@ import ActionProvider from './ActionProvider.js';
 
 import { ContactContainer } from './ContactElements.js';
 
+import { useSelector } from 'react-redux'
 
 
 function Contact() {
 
-
-    const [showBot, toggleBot] = useState(false);
-
-    const handleBtn = () => {
-        toggleBot(false)
-    }
+    const showChatbot = useSelector( state => state.chatbotReducer.status)
 
     return (
         <ContactContainer>
-            {showBot && (
-                <Chatbot
-                    config={config}
-                    messageParser={MessageParser}
-                    actionProvider={ActionProvider}
-                />
-            )}
-          
-            <button 
-            onClick={() => toggleBot((prev) => !prev)}
-            style={{fontFamily: 'Poppins', fontSize: "16px", padding: "5px", borderRadius: "5px", border: "none", marginRight: "5px", cursor: "pointer" }}
-            >
-                {showBot ? `Cerrar` : `Chat`}
-            </button>
+            {
+                showChatbot && (
+                    <Chatbot
+                        config={config}
+                        messageParser={MessageParser}
+                        actionProvider={ActionProvider}
+                    />
+                )
+            }     
         </ContactContainer>
     );
 }

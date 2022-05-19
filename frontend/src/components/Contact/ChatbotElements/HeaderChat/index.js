@@ -1,11 +1,16 @@
 import React from 'react'
-import { HeaderChat } from './HeaderElements'
+import { Header, HeaderButton } from './HeaderElements'
 
-function index(props) {
-  console.log(props)
+import { store } from '../../../../redux/store'
+import { showChatbot } from '../../../../redux/actions/ChatbotAction'
+
+function HeaderChat({children}) {
   return (
-    <HeaderChat />     
+    <Header>
+      {children}
+      <HeaderButton onClick={() => store.dispatch(showChatbot(false))}>X</HeaderButton>
+    </Header>     
   )
 }
 
-export default index
+export default HeaderChat

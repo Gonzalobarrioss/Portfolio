@@ -17,11 +17,11 @@ import Main from '../components/Main'
 
 const Home = () => {
 
-   
+  
 
   return (
     <LayoutContainer>
-      <Header />
+      <Header/>
     
       
       <Left />
@@ -38,7 +38,7 @@ const Home = () => {
             <Services />
             <InfoSection {...homeObjThree}/>
             */}
-            <Contact />
+            <Contact/>
           </Main>
           
         <Footer />

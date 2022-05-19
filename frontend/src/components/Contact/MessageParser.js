@@ -1,18 +1,19 @@
 // in MessageParser.js
+
 class MessageParser {
   constructor(actionProvider, state) {
     this.actionProvider = actionProvider;
     this.state = state;
   }
 
+
+
   parse(message) {
-    if (message.includes('hola')) {
+    if ((message.toLowerCase()).includes('hola')) {
       this.actionProvider.handleHello();
     }
 
-
-
-    if (message.includes('perro')) {
+    if ((message.toLowerCase()).includes('perro')) {
       this.actionProvider.handleDog();
     }
   }
