@@ -16,7 +16,7 @@ export const SidebarContainer = styled.aside`
     z-index: 10000;
     width: 100%;
 
-    font-family: consolas;
+    font-family: sans-serif;
     
     transition: 0.5s ease-in-out;
     
@@ -67,31 +67,12 @@ export const ButtonLink = styled.span`
     
     cursor:pointer;
     font-size: 3.5em;
+    font-weight: 600;
     text-decoration: none;
-    line-height: 1.5em;
+    line-height: 1.1em;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(255,255,255,0.5);
-
-
-    &:before {
-        content: attr(data-text);
-        position: absolute;
-        color: #fff;
-        width: 0;
-        overflow: hidden;
-        transition: 0.75s;
-        border-right: 8px solid ${props => props.color};
-        -webkit-text-stroke: 1px ${props => props.color};
-        animation: ${animate} 1s steps(1) infinite;
-    }
-
-    &:hover:before {
-        width: 100%;
-        filter: drop-shadow(0 0 25px ${props => props.color});
-        animation: ${animate} 0s infinite;
-    }
+    color: #8892b0;
 
 `
 

@@ -20,14 +20,35 @@ class ActionProvider {
   }
 
   handleOptions = () => {
+    
     const message = this.createChatbotMessage(
       
-      ``,
+      `En que te puedo ayudar?`,
       {
-        widget: 'selectOption'
+        delay: 1000,
+        widget: 'selectOption',
+        withAvatar: true
       }
-        
+         
+    );
+
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleHire = () => {
+    
+    const message = this.createChatbotMessage(
       
+      `Que deseas saber?`,
+      {
+        delay: 1000,
+        widget: 'hireOption',
+        withAvatar: true
+      }
+         
     );
 
     this.setState((prev) => ({
@@ -37,7 +58,23 @@ class ActionProvider {
   }
 
   handleHello = () =>  {
-    const message = this.createChatbotMessage('Gracias por saludar! Mientras continuo desarrollando te invito a que escribas "muestrame un perro" y elegire uno especial para ti');
+    const message = this.createChatbotMessage(
+      'Gracias por saludar. Espero que andes bien!',
+      {
+        delay: 500
+      }
+      );
+
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleClientResponse = (clientMessage) =>  {
+    const message = this.createClientMessage(
+      `${clientMessage}`
+      );
 
     this.setState((prev) => ({
       ...prev,
@@ -63,6 +100,68 @@ class ActionProvider {
       `Actualmente me encuentro trabajando, pero si tenes una propuesta que creas que pueda interesarme podemos organizar un meet. 
         Envíame un correo y trataré de responder lo mas pronto posible`, 
     );
+
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleAbout = () =>  {
+    const message = this.createChatbotMessage(
+      `Entre al mundo del desarrollo hace ${new Date().getFullYear() - 2018} años. En el 2019 me recibi de Analista Programador.
+        Comence mi experiencia laboral como Desarrollador web y Soporte tecnico en la Universidad Gastón Dachary en Abril del 2021,
+        hasta septiembre de ese mismo año, que fue cuando ingrese en mi actual trabajo: SAMSA.
+      `,
+      {
+        delay: 500
+      }
+      );
+
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleBusqueda = () =>  {
+    const message = this.createChatbotMessage(
+      `Todavia estoy desarrollando este item
+      `,
+      {
+        delay: 500
+      }
+      );
+
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleDisponibilidad = () =>  {
+    const message = this.createChatbotMessage(
+      `Todavia estoy desarrollando este item
+      `,
+      {
+        delay: 500
+      }
+      );
+
+    this.setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, message],
+    }));
+  }
+
+  handleOtrosIntereses = () =>  {
+    const message = this.createChatbotMessage(
+      `Todavia estoy desarrollando este item
+      `,
+      {
+        delay: 500
+      }
+      );
 
     this.setState((prev) => ({
       ...prev,

@@ -6,7 +6,7 @@ import  HeaderChat  from './ChatbotElements/HeaderChat';
 
 import DogPicture from './Widgets/DogPicture';
 import Options from './Widgets/Options';
-
+import Contrato from './Widgets/Options/Contrato';
 
 const botName = 'Gonzalo';
 
@@ -17,14 +17,12 @@ const config = {
     createChatBotMessage(
       `Hola, como estas? Mi nombre es ${botName}. Por el momento el chat se encuentra en desarrollo. Vuelve pronto para ver los avances!`,
       {
-        withAvatar: false
+        withAvatar: true,
+        loading: false,
+        delay: 500,
+        widget: 'selectOption'
       }
-    ),
-    createCustomMessage(
-      ``,
-      `custom`
-    )
-      
+    ) 
   ] ,
   state: {
     gist: '',
@@ -36,12 +34,14 @@ const config = {
       widgetFunc: (props) => <DogPicture {...props} />
     },
     {
-      // defines the name you will use to reference to this widget in "createChatBotMessage".
       widgetName: 'selectOption',
-      // Function that will be called internally to resolve the widget
       widgetFunc: (props) => <Options {...props} />,
       mapStateToProps: ['gist', 'infoBox'],
-      
+    },
+    {
+      widgetName: 'hireOption',
+      widgetFunc: (props) => <Contrato {...props} />,
+      mapStateToProps: ['gist', 'infoBox'],
     },
   ],
   
@@ -65,7 +65,7 @@ const config = {
    // Replaces the default user icon
    userAvatar: (props) => <MyCustomAvatar {...props} />,
    // Replaces the default user chat message */
-   //userChatMessage: () => < style={backgroundColor: "red"}></>
+   //userChatMessage: () => <div> asd</div>
  },
  customMessages: {
   custom: (props) => <Options {...props} />

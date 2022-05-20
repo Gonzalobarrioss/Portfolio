@@ -18,10 +18,17 @@ import {
     SocialMediaContainer
 } from './SidebarElements'
 
+import { store } from '../../redux/store'
+import { showChatbot } from '../../redux/actions/ChatbotAction'
+
 const Sidebar = (props) => {
 
     const {isOpen, toggle} = props
 
+    const toggleContact = () => {
+        toggle()
+        store.dispatch(showChatbot(true))
+    }
   return (
     
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -32,16 +39,16 @@ const Sidebar = (props) => {
         <SidebarWrapper>
             <SidebarMenu>
                 <SidebarLink to='about' onClick={toggle} >
-                    <ButtonLink data-text="&nbsp;About" color='#03e9f4'>&nbsp;About</ButtonLink>
+                    <ButtonLink>&nbsp;About</ButtonLink>
                 </SidebarLink>
                 <SidebarLink to='skills' onClick={toggle} >
-                    <ButtonLink data-text="&nbsp;Skills" color='#03e9f4'>&nbsp;Skills</ButtonLink>
+                    <ButtonLink>&nbsp;Skills</ButtonLink>
                 </SidebarLink>
-                <SidebarLink to='discover' onClick={toggle}>
-                    <ButtonLink data-text="&nbsp;Works" color='#03e9f4'>&nbsp;Works</ButtonLink>
+                <SidebarLink to='works' onClick={toggle}>
+                    <ButtonLink>&nbsp;Works</ButtonLink>
                 </SidebarLink>
-                <SidebarLink to='services' onClick={toggle}>
-                    <ButtonLink data-text="&nbsp;Contact" color='#03e9f4'>&nbsp;Contact</ButtonLink>
+                <SidebarLink to='/' onClick={toggleContact}>
+                    <ButtonLink>&nbsp;Contact</ButtonLink>
                 </SidebarLink>
                 {/*
                 <SidebarLink to='signup' onClick={toggle}>

@@ -9,7 +9,7 @@ import ActionProvider from './ActionProvider.js';
 import { ContactContainer } from './ContactElements.js';
 
 import { useSelector } from 'react-redux'
-
+import './Chatbot.css'
 
 function Contact() {
 

@@ -9,16 +9,25 @@ function Options(props) {
     
     switch (option) {
       case 'saludar':
+        props.actionProvider.handleClientResponse(`Solo vine a saludar`)
         props.actionProvider.handleHello()
         props.actionProvider.handleOptions()
+        
       break;
       case 'presupuesto':
+        props.actionProvider.handleClientResponse(`Quiero un presupuesto`)
         props.actionProvider.handlePresupuesto()
+        props.actionProvider.handleOptions()
         break;
       case 'contratar':
+        props.actionProvider.handleClientResponse(`Quiero contratarte`)
         props.actionProvider.handleContratar()
+        props.actionProvider.handleHire()
         break;
-    
+      case 'perro':
+        props.actionProvider.handleDog()
+        props.actionProvider.handleOptions()
+        break;
       default:
         break;
     }
@@ -29,8 +38,9 @@ function Options(props) {
     <OptionsContainer>
       <OptionsList>
         <Option onClick={() => setOption('saludar')}>Solo vine a saludar</Option>
-        <Option onClick={() => setOption('presupuesto')}>Quiero un presupuesto</Option>
+        <Option onClick={() => setOption('presupuesto')}>Quiero una pagina</Option>
         <Option onClick={() => setOption('contratar')}>Quiero contratarte</Option>
+        <Option onClick={() => setOption('perro')}>Muestrame un perrito</Option>
       </OptionsList>
     </OptionsContainer>
   )

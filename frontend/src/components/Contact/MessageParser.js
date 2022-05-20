@@ -11,11 +11,7 @@ class MessageParser {
   parse(message) {
     if ((message.toLowerCase()).includes('hola')) {
       this.actionProvider.handleHello();
-    }
-
-    if ((message.toLowerCase()).includes('perro')) {
-      this.actionProvider.handleDog();
-    }
+    } 
   }
 }
 

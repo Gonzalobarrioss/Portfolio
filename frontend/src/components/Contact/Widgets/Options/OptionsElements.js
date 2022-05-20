@@ -7,13 +7,12 @@ export const OptionsContainer = styled.div`
     left: 0;
     justify-content: flex-start;
     align-items: flex-start;
-    width: inherit;
-    height: 180px;
+    width: 100%;
 `
 
 export const OptionsList = styled.ul`
     list-style: none;
-    height: 30px;
+    width: 200px;
     padding: 0;
 `
 
@@ -26,7 +25,7 @@ export const Option = styled.li`
     font-size: 14px;
     border-radius: 10px;
     cursor: pointer;
-    width: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
