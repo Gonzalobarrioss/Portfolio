@@ -11,6 +11,7 @@ import React from 'react';
 
 import Home from './pages';
 import SigninPage from './pages/signin'
+import About from './pages/AboutMe'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route path='/' element={ <Home />} />
             <Route path='/signin' element={ <SigninPage />} />
+            <Route path='/cv' element={ <About />} />
           </Routes>
         </HashRouter>
    { /*   </PersistGate> */ }

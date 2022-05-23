@@ -113,7 +113,7 @@ const Navbar = ({toggle,}) => {
                             </NavLinks>
                         </NavItem>
                         <NavBtn>
-                            <NavBtnLink to='/'>
+                            <NavBtnLink to='/cv'>
                                 <span></span>
                                 <span></span>
                                 <span></span>

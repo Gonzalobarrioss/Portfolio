@@ -1,7 +1,16 @@
-export default function AboutMe() {
+import React from "react"
+import PDF from '../assets/GBCV.pdf'
+
+
+const About = () =>  {
     return(
-        <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "90vh "}}>
-            <h1>About Me</h1>
-        </div>
+        <>
+           <img src={PDF} alt= 'CV'  />
+               
+            <PDF />
+           
+        </>
     )
 };
+
+export default About
