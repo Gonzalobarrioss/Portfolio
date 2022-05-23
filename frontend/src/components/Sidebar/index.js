@@ -39,16 +39,16 @@ const Sidebar = (props) => {
         <SidebarWrapper>
             <SidebarMenu>
                 <SidebarLink to='about' onClick={toggle} >
-                    <ButtonLink>&nbsp;About</ButtonLink>
+                    <ButtonLink>About</ButtonLink>
                 </SidebarLink>
                 <SidebarLink to='skills' onClick={toggle} >
-                    <ButtonLink>&nbsp;Skills</ButtonLink>
+                    <ButtonLink>Skills</ButtonLink>
                 </SidebarLink>
                 <SidebarLink to='works' onClick={toggle}>
-                    <ButtonLink>&nbsp;Works</ButtonLink>
+                    <ButtonLink>Works</ButtonLink>
                 </SidebarLink>
                 <SidebarLink to='/' onClick={toggleContact}>
-                    <ButtonLink>&nbsp;Contact</ButtonLink>
+                    <ButtonLink>Contact</ButtonLink>
                 </SidebarLink>
                 {/*
                 <SidebarLink to='signup' onClick={toggle}>

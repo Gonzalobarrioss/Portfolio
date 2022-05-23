@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
 
+
 const showContent = keyframes`
     0%{
         opacity: 0;

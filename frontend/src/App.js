@@ -16,14 +16,14 @@ function App() {
   return (
     <>
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
+    { /*  <PersistGate loading={null} persistor={persistor}>  */}
         <HashRouter base='https://gonzalobarrioss.github.io/Portfolio/'>
           <Routes>
             <Route path='/' element={ <Home />} />
             <Route path='/signin' element={ <SigninPage />} />
           </Routes>
         </HashRouter>
-      </PersistGate>
+   { /*   </PersistGate> */ }
     </Provider>
     </>
   );

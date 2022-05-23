@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
 
+
 export const Button = styled.a`
     position: relative;
     display: inline-block;
     padding: 15px 30px;
     border: 2px solid #03e9f4;
+    
     margin: 40px;
     text-transform: uppercase;
     font-weight: 600;
@@ -16,7 +18,7 @@ export const Button = styled.a`
     transition: 0.5s;
     transition-delay: 0s;
     cursor: pointer;
-
+    
     &:hover{
         transition-delay: 1.5s;
         color: #fff;
@@ -30,8 +32,8 @@ export const Button = styled.a`
             width: 60%;
             height: 100%;
             left: -2px;
-            box-shadow: 5px 0 0 #03e9f4,
-                        5px 0 0 #03e9f4;
+            box-shadow: 0px 1px 0 #03e9f4,
+                        0px -1px 0 #03e9f4;
             transition-delay: 0s,0.5s,1s,1s;
         }
 
@@ -39,8 +41,8 @@ export const Button = styled.a`
             width: 60%;
             height: 100%;
             right: -2px;
-            box-shadow: -5px 0 0 #03e9f4,
-                        -5px 0 0 #03e9f4;
+            box-shadow:  0 1px 0 #03e9f4,
+                        -1px -1px 0 #03e9f4;
             transition-delay: 0s,0.5s,1s,1s;
         }
     }

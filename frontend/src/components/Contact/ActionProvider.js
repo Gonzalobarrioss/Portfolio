@@ -85,7 +85,7 @@ class ActionProvider {
   handlePresupuesto = () =>  {
     
     const message = this.createChatbotMessage(
-      `Aun estoy preparando este item`,
+      `Cuando el portfolio se encuentre completo, esta sección estará lista.`,
     );
 
     this.setState((prev) => ({
@@ -124,9 +124,17 @@ class ActionProvider {
     }));
   }
 
-  handleBusqueda = () =>  {
+  handleHabilidades = () =>  {
     const message = this.createChatbotMessage(
-      `Todavia estoy desarrollando este item
+      ` Mis principales habilidades son:
+        React, React Native,
+        react-navigation stack & tab, react-router-dom,
+        redux, redux-persist,
+        API RESTful, promises, async,
+        HTML, CSS, Javascript, MySQL, Nodejs, Git, Heroku.
+        Habilidades blandas: 
+        Creatividad, Adaptabilidad, Pensamiento crítico,
+        Trabajo en equipo, Pensamiento estratégico.
       `,
       {
         delay: 500
@@ -141,7 +149,7 @@ class ActionProvider {
 
   handleDisponibilidad = () =>  {
     const message = this.createChatbotMessage(
-      `Todavia estoy desarrollando este item
+      `Mi disponibilidad horaria para reuniones y entrevistas es de lunes a viernes entre las 16 y 21hs.
       `,
       {
         delay: 500
@@ -156,7 +164,14 @@ class ActionProvider {
 
   handleOtrosIntereses = () =>  {
     const message = this.createChatbotMessage(
-      `Todavia estoy desarrollando este item
+      `Contratos con relacion de dependencia: 
+      Salario base $1.000usd.
+      Modalidad de trabajo remota.
+      Full time/Part time.
+      Proyectos a largo plazo.
+      Capacitaciones.
+
+      Por el momento estoy interesado en lo mencionado.
       `,
       {
         delay: 500

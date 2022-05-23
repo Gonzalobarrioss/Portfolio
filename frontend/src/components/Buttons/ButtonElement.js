@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { Link as LinkS } from 'react-scroll'
 
 export const Button = styled(Link)`
     border-radius: 50px;
@@ -23,7 +24,7 @@ export const Button = styled(Link)`
     }
 `
 
-export const ButtonNeon = styled(Link)`
+export const ButtonNeon = styled(LinkS)`
     position: relative;
     display: flex;
     padding: 20px 30px;
@@ -37,6 +38,7 @@ export const ButtonNeon = styled(Link)`
     letter-spacing: 4px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
     border-radius: 5px;
+    cursor: pointer;
 
     &:hover{
         background: #03e9f4;

@@ -15,7 +15,7 @@ function Options(props) {
         
       break;
       case 'presupuesto':
-        props.actionProvider.handleClientResponse(`Quiero un presupuesto`)
+        props.actionProvider.handleClientResponse(`Quiero una página`)
         props.actionProvider.handlePresupuesto()
         props.actionProvider.handleOptions()
         break;

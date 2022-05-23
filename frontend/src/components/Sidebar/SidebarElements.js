@@ -16,7 +16,7 @@ export const SidebarContainer = styled.aside`
     z-index: 10000;
     width: 100%;
 
-    font-family: sans-serif;
+    
     
     transition: 0.5s ease-in-out;
     
@@ -44,7 +44,8 @@ export const SidebarMenu = styled.ul`
     display: flex;
     flex-direction: column;
     gap: 50px;
-    
+    padding: 0;
+    align-items: center;
 `
 
 export const SidebarLink = styled(LinkS)`

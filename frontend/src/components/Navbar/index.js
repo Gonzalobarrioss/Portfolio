@@ -79,7 +79,7 @@ const Navbar = ({toggle,}) => {
                             duration={500}
                             spy={true}
                             exact="true"
-                            offset={-80}
+                            offset={0}
                             >
                                 About
                             </NavLinks>
@@ -90,7 +90,7 @@ const Navbar = ({toggle,}) => {
                             duration={500}
                             spy={true}
                             exact="true"
-                            offset={-80}
+                            offset={0}
                             >
                                 Skills
                             </NavLinks>
@@ -102,7 +102,7 @@ const Navbar = ({toggle,}) => {
                             duration={500}
                             spy={true}
                             exact="true"
-                            offset={-80}
+                            offset={0}
                             >
                                 Works
                             </NavLinks>

@@ -11,8 +11,8 @@ const persistConfig = {
   };
 
 const rootReducer = combineReducers({ 
-    chatbotReducer: persistReducer(persistConfig, chatbotReducer),
+    chatbotReducer: chatbotReducer,
 });
 
 export const store = createStore(rootReducer, applyMiddleware(thunk));
-export const persistor = persistStore(store);
+//export const persistor = persistStore(store);
