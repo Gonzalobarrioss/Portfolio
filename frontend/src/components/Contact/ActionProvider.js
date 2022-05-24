@@ -95,12 +95,15 @@ class ActionProvider {
   }
 
   handleContratar = () =>  {
+    const a = document.createElement('a')
+    a.setAttribute('href','mailto:gonza.barrios.geb@gmail.com');
+    a.innerHTML = "Aqui";
     
+
     const message = this.createChatbotMessage(
       `Actualmente me encuentro trabajando, pero si tenes una propuesta que creas que pueda interesarme podemos organizar un meet. 
-        Envíame un correo y trataré de responder lo mas pronto posible`, 
+        Ponte en contacto y responderé lo mas pronto posible`, 
     );
-
     this.setState((prev) => ({
       ...prev,
       messages: [...prev.messages, message],
