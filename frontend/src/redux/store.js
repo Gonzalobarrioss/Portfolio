@@ -4,6 +4,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import chatbotReducer from './reducers/ChatbotReducer';
+import stylesReducer from './reducers/StylesReducer';
 
 const persistConfig = {
     key: 'root',
@@ -12,6 +13,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({ 
     chatbotReducer: chatbotReducer,
+    stylesReducer: stylesReducer
 });
 
 export const store = createStore(rootReducer, applyMiddleware(thunk));

@@ -40,10 +40,12 @@ const InfoSection = (props) => {
 
     return (
             <InfoContainer lightBg={lightBg} id={id}>
+                <TopLine>{topLine}</TopLine>
                     <InfoRow imgStart={imgStart}>
+                    
                         <Column1>
                             <TextWrapper>
-                                <TopLine>{topLine}</TopLine>
+                                
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <EnergyButtonNeon />

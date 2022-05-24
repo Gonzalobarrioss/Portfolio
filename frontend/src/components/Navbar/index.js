@@ -22,12 +22,14 @@ import { faToggleOff, faToggleOn } from "@fortawesome/free-solid-svg-icons"
 import Contact from '../Contact'
 
 import { store } from '../../redux/store'
+import { changeTheme } from '../../redux/actions/StylesAction'
 import { showChatbot } from '../../redux/actions/ChatbotAction'
 
-const Navbar = ({toggle,}) => {
+import { useSelector } from 'react-redux'
+
+const Navbar = ({toggle}) => {
 
     const [scrollNav, setScrollNav] = useState(false)
-    const [isClicked, setIsClicked] = useState(false)
 
     const changeNav = () => {
         if (window.scrollY >= 80){
@@ -46,20 +48,22 @@ const Navbar = ({toggle,}) => {
       }
     }, [])
     
+    const lightTheme = useSelector(state => state.stylesReducer.principal)
+    
+
     const handleClick = () => {
-        setIsClicked(!isClicked)
-        console.log("first", isClicked)
+        store.dispatch(changeTheme(!lightTheme))
     }
 
     return (
         <>
-        <IconContext.Provider value={{color: '#fff'}} >
-            <Nav scrollnav={scrollNav}>
+        <IconContext.Provider value={ lightTheme ?{color: '#111'} : {color: '#fff'}} >
+            <Nav scrollnav={scrollNav} style={lightTheme ? {background: "#fff"} : null }>
                 <NavbarContainer>
-                        
-                    <ToggleContainer onClick={ () => console.log("click") } >
-                        <Indicator />
-                    </ToggleContainer>
+                      {/*  
+                    <ToggleContainer className={lightTheme ? 'active' : 'inactive'} onClick={ () => handleClick() } >
+                        <Indicator />  
+                    </ToggleContainer> 
                    {/* <NavLogo>
                         
 

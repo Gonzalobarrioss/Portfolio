@@ -17,12 +17,12 @@ function Contrato(props) {
         props.actionProvider.handleHire()
         break;
       case 'disponibilidad':
-        props.actionProvider.handleClientResponse(`Disponibilidad`)
+        props.actionProvider.handleClientResponse(`Disponibilidad horaria`)
         props.actionProvider.handleDisponibilidad()
         props.actionProvider.handleHire()
         break;
       case 'intereses':
-        props.actionProvider.handleClientResponse(`Otros intereses`)
+        props.actionProvider.handleClientResponse(`Quiero saber sobre tus intereses`)
         props.actionProvider.handleOtrosIntereses()
         props.actionProvider.handleHire()
         break;
@@ -43,7 +43,7 @@ function Contrato(props) {
         <Option onClick={() => setOption('aboutme')}>Cuentame de ti</Option>
         <Option onClick={() => setOption('habilidades')}>Principales habilidades</Option>
         <Option onClick={() => setOption('disponibilidad')}>Disponibilidad</Option>
-        <Option onClick={() => setOption('intereses')}>Otros intereses</Option>
+        <Option onClick={() => setOption('intereses')}>Intereses</Option>
         <Option onClick={() => setOption('volver')}>Volver</Option>
       </OptionsList>
     </OptionsContainer>

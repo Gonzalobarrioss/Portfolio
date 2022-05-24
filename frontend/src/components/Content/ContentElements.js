@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const ContentContainer = styled.div`
     display: block;
     flex-direction: column;
@@ -9,4 +10,5 @@ export const ContentContainer = styled.div`
     box-sizing: border-box;
     background: #0a192f;
     max-width: 1600px;
+    transition: 0.75s;
 `

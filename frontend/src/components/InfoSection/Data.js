@@ -6,13 +6,19 @@ export const about = {
     lightTextDesc: true,
     topLine: ' about me',
     headline: '',
-    description: `Hola! Mi nombre es Gonzalo y hago cosas creativas en la web. 
+    description: `
                 Actualmente me encuentro trabajando como Software Developer en SAMSA, 
-                pero en mis ratos libres me dedico al desarrollo de páginas.
-
+                pero en mis ratos libres me dedico al desarrollo de páginas web y apps.
+                Tengo un fuerte interés en lo que es Ethical Hacking, IOT, Robótica,
+                algunos E-Sport y Streaming. Por el momento, las tecnologìas que utilizo
+                son: React, react-router-dom, Styled-Components, NodeJS, Express, Heroku y Git
+                . Si tenes una idea y queres plasmarla
+                contactate conmigo y responderé los mas breve posible.
+                
+                
     `,
     buttonLabel: 'Quiero una pagina',
-    img: require('../../images/designer.svg').default,
+    img: require('../../images/designer.svg').default, 
     alt: 'Bussines_Woman',
     dark: true,
     primary: true,
