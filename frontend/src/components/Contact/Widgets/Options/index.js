@@ -40,7 +40,7 @@ function Options(props) {
         <Option onClick={() => setOption('saludar')}>Solo vine a saludar</Option>
         <Option onClick={() => setOption('presupuesto')}>Quiero una pagina</Option>
         <Option onClick={() => setOption('contratar')}>Quiero contratarte</Option>
-        <Option onClick={() => setOption('perro')}>Muestrame un perrito</Option>
+       {/* <Option onClick={() => setOption('perro')}>Muestrame un perrito</Option> */ }
       </OptionsList>
     </OptionsContainer>
   )
