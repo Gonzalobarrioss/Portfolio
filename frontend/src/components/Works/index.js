@@ -1,6 +1,7 @@
 import React from 'react'
 import Tilt from 'react-vanilla-tilt'
 import BankVideo from '../../videos/video.mp4'
+import TravelVideo from '../../assets/videos/water.mp4'
 import { 
     WorksContainer,
     WorksTitle,
@@ -50,11 +51,11 @@ const Works = () => {
             </Tilt>
             <Tilt style={{position:"relative", width: "100%", height: "100%",  margin: "0 25px"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
             <WorksCard>
-                <ImgBx />
+            <VideoBx autoPlay loop src={TravelVideo} muted type='video/mp4' style={{width:'100%', height: '100%'}}/>
                 <WorksContent>
-                    <WorksH3>Proximamente</WorksH3>
-                    <WorksP>Aplicacion de tareas en PlayStore</WorksP>
-                    <a href='#'>Read More</a>
+                    <WorksH3>Travel Site</WorksH3>
+                    <WorksP>Un sitio para viajar</WorksP>
+                    <a href='https://gonzalobarrioss.github.io/travelsite' target='_blank' rel='noreferrer'>Ver proyecto</a>
                 </WorksContent>
             </WorksCard>
             </Tilt>
