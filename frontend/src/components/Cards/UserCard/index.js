@@ -23,7 +23,7 @@ function UserCard() {
                 </ImgBx>
                 <CardContent>
                     <ContentBx>
-                        <CardH3>Gonzalo Barrios <br /><span>SSR Web Designer</span></CardH3>
+                        <CardH3>Gonzalo Barrios <br /><span>SSR Web Developer</span></CardH3>
                     </ContentBx>
                     <CardList>
                         <CardItem>
