@@ -24,7 +24,7 @@ const Works = () => {
 
   return (
     <WorksContainer id='works'>
-        <WorksTitle>Works</WorksTitle>
+        <WorksTitle> Proyectos</WorksTitle>
         <WorksWrapper>
             <Tilt style={{position:"relative", width: "100%", height: "100%", margin: "0 25px"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
                 <WorksCard>  

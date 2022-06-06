@@ -15,7 +15,7 @@ function Skills() {
   return (
       
       <SkillsSection id='skills'>
-          <SkillsTitle> Skills</SkillsTitle>
+          <SkillsTitle> Habilidades</SkillsTitle>
         <SkillsContainer>
             
             <SkillsCard>

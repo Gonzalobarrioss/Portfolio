@@ -16,9 +16,10 @@ function Contrato(props) {
         props.actionProvider.handleHabilidades()
         props.actionProvider.handleHire()
         break;
-      case 'disponibilidad':
-        props.actionProvider.handleClientResponse(`Disponibilidad horaria`)
-        props.actionProvider.handleDisponibilidad()
+      case 'mail':
+
+        props.actionProvider.handleClientResponse(`Enviar correo`)
+        props.actionProvider.handleSendMail()
         props.actionProvider.handleHire()
         break;
       case 'intereses':
@@ -42,8 +43,8 @@ function Contrato(props) {
       <OptionsList>
         <Option onClick={() => setOption('aboutme')}>Cuentame de ti</Option>
         <Option onClick={() => setOption('habilidades')}>Principales habilidades</Option>
-        <Option onClick={() => setOption('disponibilidad')}>Disponibilidad</Option>
         <Option onClick={() => setOption('intereses')}>Intereses</Option>
+        <a href='mailto:gonza.barrios.geb@gmail.com' style={{textDecoration: 'none', color: "#111"}} ><Option onClick={() => console.log("mail")}>Enviar correo</Option></a>
         <Option onClick={() => setOption('volver')}>Volver</Option>
       </OptionsList>
     </OptionsContainer>

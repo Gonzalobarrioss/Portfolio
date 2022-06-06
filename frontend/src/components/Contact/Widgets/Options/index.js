@@ -31,7 +31,7 @@ function Options(props) {
       default:
         break;
     }
-    console.log(props)
+    //console.log(props)
   }
 
   return (

@@ -60,7 +60,7 @@ const HeroSection = () => {
                     <span></span>
                     <span></span>
                     <span></span>
-                    Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+                    VER MAS {hover ? <ArrowForward /> : <ArrowRight />}
                 </ButtonNeon>
             </HeroBtnWrapper>
         </HeroContent>

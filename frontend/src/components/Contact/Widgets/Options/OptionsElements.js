@@ -16,6 +16,8 @@ export const OptionsList = styled.ul`
     padding: 0;
 `
 
+
+
 export const Option = styled.li`
     background: #fff;
     color: #0a192f;
@@ -32,10 +34,19 @@ export const Option = styled.li`
     position: relative;
 
     transition: 0.2s;
+    
+    
 
     &:hover{
         background: #0a192f;
         color: #fff;
-        transform: scale(1.08)
+        transform: scale(1.08);        
+        
+        a{
+            
+            &::first-line{
+                color: #fff;
+            }
+        }
     }
 `

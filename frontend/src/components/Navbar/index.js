@@ -85,7 +85,7 @@ const Navbar = ({toggle}) => {
                             exact="true"
                             offset={0}
                             >
-                                About
+                                Presentacion
                             </NavLinks>
                         </NavItem>
                         <NavItem>
@@ -96,7 +96,7 @@ const Navbar = ({toggle}) => {
                             exact="true"
                             offset={0}
                             >
-                                Skills
+                                Habilidades
                             </NavLinks>
                         </NavItem>
 
@@ -108,12 +108,12 @@ const Navbar = ({toggle}) => {
                             exact="true"
                             offset={0}
                             >
-                                Works
+                                Proyectos
                             </NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='/' onClick={() => store.dispatch(showChatbot(true))}>
-                                Contact
+                                Contacto
                             </NavLinks>
                         </NavItem>
                         <NavBtn>

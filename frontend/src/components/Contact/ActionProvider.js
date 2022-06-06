@@ -150,9 +150,9 @@ class ActionProvider {
     }));
   }
 
-  handleDisponibilidad = () =>  {
+  handleSendMail = () =>  {
     const message = this.createChatbotMessage(
-      `Mi disponibilidad horaria para reuniones y entrevistas es de lunes a viernes entre las 16 y 21hs.
+      `Enviame un correo a gonza.barrios.geb@gmail.com y te responderé en breve.
       `,
       {
         delay: 500
@@ -167,14 +167,14 @@ class ActionProvider {
 
   handleOtrosIntereses = () =>  {
     const message = this.createChatbotMessage(
-      `Contratos con relacion de dependencia: 
+      
+      `Por el momento estoy interesado en
+      contratos con relacion de dependencia: 
       Salario base $1.000usd.
       Modalidad de trabajo remota.
       Full time/Part time.
       Proyectos a largo plazo.
       Capacitaciones.
-
-      Por el momento estoy interesado en lo mencionado.
       `,
       {
         delay: 500
