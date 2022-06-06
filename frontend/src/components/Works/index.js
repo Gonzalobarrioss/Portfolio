@@ -45,7 +45,7 @@ const Works = () => {
                 <WorksContent>
                     <WorksH3>Bank Page</WorksH3>
                     <WorksP>React 4 sections page template</WorksP>
-                    <a href='https://gonzalobarrioss.github.io/aboutme' target='_blank' rel='noreferrer'>Ver proyecto</a>
+                    <a href='https://gonzalobarrioss.github.io/bitBank' target='_blank' rel='noreferrer'>Ver proyecto</a>
                 </WorksContent>
             </WorksCard>
             </Tilt>
