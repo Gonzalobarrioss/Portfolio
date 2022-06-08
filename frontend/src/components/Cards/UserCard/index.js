@@ -12,6 +12,7 @@ import {
 } from './UserCardElements'
 import UserImg from '../../../images/img1.jpg'
 import UserPerfil from '../../../images/perfil.jfif'
+import Perfil from '../../../assets/images/perfil.jfif'
 import {FaFacebookF,FaInstagram,FaLinkedinIn,FaTelegram,FaTwitter} from 'react-icons/fa'
 
 function UserCard() {
@@ -19,7 +20,7 @@ function UserCard() {
         <CardContainer>
             <Card>
                 <ImgBx>
-                    <img src={UserPerfil} alt=''/>
+                    <img src={Perfil} alt=''/>
                 </ImgBx>
                 <CardContent>
                     <ContentBx>
