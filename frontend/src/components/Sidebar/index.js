@@ -38,17 +38,44 @@ const Sidebar = (props) => {
         </Icon>
         <SidebarWrapper>
             <SidebarMenu>
-                <SidebarLink to='about' onClick={toggle} >
-                    <ButtonLink>About</ButtonLink>
+                <SidebarLink 
+                    to='about'
+                    smooth={true} 
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={0} 
+                    onClick={toggle} 
+                >
+                    <ButtonLink>Presentacion</ButtonLink>
                 </SidebarLink>
-                <SidebarLink to='skills' onClick={toggle} >
-                    <ButtonLink>Skills</ButtonLink>
+                <SidebarLink 
+                    to='skills'
+                    smooth={true} 
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={0}
+                    onClick={toggle} 
+                >
+                    <ButtonLink>Habilidades</ButtonLink>
                 </SidebarLink>
-                <SidebarLink to='works' onClick={toggle}>
-                    <ButtonLink>Works</ButtonLink>
+                <SidebarLink 
+                    to='works'
+                    smooth={true} 
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={0}
+                    onClick={toggle}
+                >
+                    <ButtonLink>Proyectos</ButtonLink>
                 </SidebarLink>
-                <SidebarLink to='/' onClick={toggleContact}>
-                    <ButtonLink>Contact</ButtonLink>
+                <SidebarLink 
+                    to='/' 
+                    onClick={toggleContact}
+                >
+                    <ButtonLink>Contacto</ButtonLink>
                 </SidebarLink>
                 {/*
                 <SidebarLink to='signup' onClick={toggle}>

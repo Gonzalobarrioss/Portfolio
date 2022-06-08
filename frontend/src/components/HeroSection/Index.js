@@ -36,11 +36,11 @@ const HeroSection = () => {
                     <HeroGlowingLetter>A</HeroGlowingLetter>
                     <HeroGlowingLetter>L</HeroGlowingLetter>
   <HeroGlowingLetter>O</HeroGlowingLetter>*/}
-                    Gonzalo Barrios.
+                    Gonzalo Barrios
                 </HeroGlowingText>
-                <HeroH2>Hago paginas creativas</HeroH2>
+                <HeroH2>y hago paginas creativas</HeroH2>
             <HeroP>
-                Soy un desarrollador web especializado en landing page & 4 section web.
+                Soy un desarrollador frontend especializado en landing page & 4 section web.
             </HeroP>
             <HeroBtnWrapper>
 

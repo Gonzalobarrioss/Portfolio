@@ -67,7 +67,7 @@ export const ButtonLink = styled.span`
     position: relative;
     
     cursor:pointer;
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 600;
     text-decoration: none;
     line-height: 1.1em;

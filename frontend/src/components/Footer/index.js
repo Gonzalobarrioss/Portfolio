@@ -24,7 +24,7 @@ const Footer = () => {
                         <SocialIconLink href='https://github.com/Gonzalobarrioss' target='_blank' aria-label='Github'>
                             <FaGithub />
                         </SocialIconLink>
-                        <SocialIconLink href='//www.twitch.com/' target='_blank' aria-label='Twitch'>
+                        <SocialIconLink href='https://www.twitch.tv/ponja_mw' target='_blank' aria-label='Twitch'>
                             <FaTwitch />
                         </SocialIconLink>
                         <SocialIconLink href='https://www.linkedin.com/in/gonzaloezequielbarrios/' target='_blank' aria-label='LinkedIn'>
