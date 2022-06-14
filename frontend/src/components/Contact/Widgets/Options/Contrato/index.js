@@ -43,7 +43,7 @@ function Contrato(props) {
       <OptionsList>
         <Option onClick={() => setOption('aboutme')}>Cuentame de ti</Option>
         <Option onClick={() => setOption('habilidades')}>Principales habilidades</Option>
-        <Option onClick={() => setOption('intereses')}>Intereses</Option>
+       {/* <Option onClick={() => setOption('intereses')}>Intereses</Option> */}
         <a href='mailto:gonza.barrios.geb@gmail.com' style={{textDecoration: 'none', color: "#111"}} ><Option onClick={() => console.log("mail")}>Enviar correo</Option></a>
         <Option onClick={() => setOption('volver')}>Volver</Option>
       </OptionsList>
