@@ -10,9 +10,9 @@ function Left() {
         <List>
           { /* <SocialMediaLeft><FontAwesomeIcon icon={faFacebookF} /></SocialMediaLeft> */}
 
-            <SocialMediaLeft href='https://instagram.com/ponja__' target={'_blank'}><FontAwesomeIcon icon={faInstagram} /></SocialMediaLeft>
+           {/* <SocialMediaLeft href='https://instagram.com/ponja__' target={'_blank'}><FontAwesomeIcon icon={faInstagram} /></SocialMediaLeft> */ }
           { /*   <SocialMediaLeft><FontAwesomeIcon icon={faTwitter} /></SocialMediaLeft>   */}
-            <SocialMediaLeft href='https://www.twitch.tv/ponja_mw' target={'_blank'}><FontAwesomeIcon icon={faTwitch} /></SocialMediaLeft>
+           {/* <SocialMediaLeft href='https://www.twitch.tv/ponja_mw' target={'_blank'}><FontAwesomeIcon icon={faTwitch} /></SocialMediaLeft> */ }
           { /* <SocialMediaLeft><FontAwesomeIcon icon={faWhatsapp} /></SocialMediaLeft>   */}
             <SocialMediaLeft href='https://t.me/GonzaloBarrios' target={'_blank'}><FontAwesomeIcon icon={faTelegram} /></SocialMediaLeft>
             <SocialMediaLeft href='https://www.linkedin.com/in/gonzaloezequielbarrios/' target={'_blank'}><FontAwesomeIcon icon={faLinkedinIn} /></SocialMediaLeft>

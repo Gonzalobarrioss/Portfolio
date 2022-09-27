@@ -15,18 +15,18 @@ const Footer = () => {
             <SocialMediaWrap>
                     
                     <SocialIcons>
-                        <SocialIconLink href='//www.instagram.com/ponja__' target='_blank' aria-label='Instagram'>
+                     {/*   <SocialIconLink href='//www.instagram.com/ponja__' target='_blank' aria-label='Instagram'>
                             <FaInstagram />
-                        </SocialIconLink>
+  </SocialIconLink> */}
                         <SocialIconLink href='//t.me/GonzaloBarrios' target='_blank' aria-label='Telegram'>
                             <FaTelegram />
                         </SocialIconLink>
                         <SocialIconLink href='https://github.com/Gonzalobarrioss' target='_blank' aria-label='Github'>
                             <FaGithub />
                         </SocialIconLink>
-                        <SocialIconLink href='https://www.twitch.tv/ponja_mw' target='_blank' aria-label='Twitch'>
+                     {/*   <SocialIconLink href='https://www.twitch.tv/ponja_mw' target='_blank' aria-label='Twitch'>
                             <FaTwitch />
-                        </SocialIconLink>
+  </SocialIconLink> */}
                         <SocialIconLink href='https://www.linkedin.com/in/gonzaloezequielbarrios/' target='_blank' aria-label='LinkedIn'>
                             <FaLinkedinIn />
                         </SocialIconLink>

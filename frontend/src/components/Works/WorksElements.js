@@ -78,7 +78,8 @@ export const WorksCard = styled.div`
     }
 
     @media (min-width: 480px) {
-        height: 600px;
+        height: 100px;
+        width: 200px;
     }
 
     &:hover{

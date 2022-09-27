@@ -26,7 +26,7 @@ const Works = () => {
     <WorksContainer id='works'>
         <WorksTitle> Proyectos</WorksTitle>
         <WorksWrapper>
-            <Tilt style={{position:"relative", width: "100%", height: "100%", margin: "0 25px"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
+            <Tilt style={{position:"relative", width: "200px", height: "200px", margin: "0 25px"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
                 <WorksCard>  
                 
                     <ImgBx>
@@ -39,25 +39,25 @@ const Works = () => {
                     </WorksContent>
                 </WorksCard>
             </Tilt>
-            <Tilt style={{position:"relative", width: "100%", height: "100%",  margin: "0 25px"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
-            <WorksCard>
-                <VideoBx autoPlay loop src={BankVideo} muted type='video/mp4' style={{width:'100%', height: '100%'}}/>
-                <WorksContent>
-                    <WorksH3>Bank Page</WorksH3>
-                    <WorksP>React 4 sections page template</WorksP>
-                    <a href='https://gonzalobarrioss.github.io/bitBank' target='_blank' rel='noreferrer'>Ver proyecto</a>
-                </WorksContent>
-            </WorksCard>
+            <Tilt style={{position:"relative", width: "200px", height: "200px",  margin: "0 25px"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
+                <WorksCard>
+                    <VideoBx autoPlay loop src={BankVideo} muted type='video/mp4' style={{width:'100%', height: '100%'}}/>
+                    <WorksContent>
+                        <WorksH3>Bank Page</WorksH3>
+                        <WorksP>React 4 sections page template</WorksP>
+                        <a href='https://gonzalobarrioss.github.io/bitBank' target='_blank' rel='noreferrer'>Ver proyecto</a>
+                    </WorksContent>
+                </WorksCard>
             </Tilt>
-            <Tilt style={{position:"relative", width: "100%", height: "100%",  margin: "0 25px"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
-            <WorksCard>
-            <VideoBx autoPlay loop src={TravelVideo} muted type='video/mp4' style={{width:'100%', height: '100%'}}/>
-                <WorksContent>
-                    <WorksH3>Travel Site</WorksH3>
-                    <WorksP>Un sitio para viajar</WorksP>
-                    <a href='https://gonzalobarrioss.github.io/travelsite' target='_blank' rel='noreferrer'>Ver proyecto</a>
-                </WorksContent>
-            </WorksCard>
+            <Tilt style={{position:"relative", width: "200px", height: "200px",  margin: "0 25px"}} options={{max: 40, speed: 400, glare: true, "max-glare": 1}}>
+                <WorksCard>
+                <VideoBx autoPlay loop src={TravelVideo} muted type='video/mp4' style={{width:'100%', height: '100%'}}/>
+                    <WorksContent>
+                        <WorksH3>Travel Site</WorksH3>
+                        <WorksP>Un sitio para viajar</WorksP>
+                        <a href='https://gonzalobarrioss.github.io/travelsite' target='_blank' rel='noreferrer'>Ver proyecto</a>
+                    </WorksContent>
+                </WorksCard>
             </Tilt>
         </WorksWrapper>
       

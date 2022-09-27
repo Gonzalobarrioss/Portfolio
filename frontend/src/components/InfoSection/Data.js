@@ -1,3 +1,4 @@
+
 export const about = {
     id: 'about',
     blueBg: false,
@@ -9,11 +10,8 @@ export const about = {
     description: `
                 Bienvenidos/as a mi sitio, 
                 Actualmente me encuentro trabajando como Software Developer en SAMSA, 
-                pero en mis ratos libres me dedico al desarrollo de páginas web y apps.
-                Tengo un fuerte interés en lo que es Ethical Hacking, IOT, Robótica,
-                algunos E-Sport y Streaming. Por el momento, las tecnologìas que utilizo
-                son: React, react-router-dom, Styled-Components, NodeJS, Express, Heroku y Git
-                . Si estas buscando tener tu primer página y no sabes por donde empezar
+                donde realizo desarrollo web & mobile. 
+                Si estas buscando tener tu primer página y no sabes por donde empezar
                 contactate conmigo y responderé los mas breve posible.
                 
                 
