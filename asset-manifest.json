@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b9d64653.css",
-    "main.js": "/Portfolio/static/js/main.43c7d1b7.js",
+    "main.css": "/Portfolio/static/css/main.dceca57d.css",
+    "main.js": "/Portfolio/static/js/main.0f12508e.js",
     "static/media/water.mp4": "/Portfolio/static/media/water.e665dedc1d15894a9468.mp4",
     "static/media/video.mp4": "/Portfolio/static/media/video.7d1ea6a94986d5c2a068.mp4",
     "static/media/GBCV.pdf": "/Portfolio/static/media/GBCV.0c8c655739989b7e5209.pdf",
@@ -9,16 +9,19 @@
     "static/media/rickmorty.jpg": "/Portfolio/static/media/rickmorty.c5460a6681f5c0ad56e1.jpg",
     "static/media/perfil.jfif": "/Portfolio/static/media/perfil.42f2065f79b44839d345.jfif",
     "static/media/designer.svg": "/Portfolio/static/media/designer.2d8130107e3bc319e6e1708cb1bb27fd.svg",
-    "static/media/bussines_woman.svg": "/Portfolio/static/media/bussines_woman.7671d99a741ffdaed3c31e7aa2f957b8.svg",
+    "static/media/startup_life.svg": "/Portfolio/static/media/startup_life.2180389e994920656a0a75797fd30973.svg",
     "static/media/data.svg": "/Portfolio/static/media/data.1fd647bc32ed79f1789b98ed3fc8b3be.svg",
-    "static/media/interview.svg": "/Portfolio/static/media/interview.69821a20eb8701d5145c606b955cd546.svg",
+    "static/media/online_media.svg": "/Portfolio/static/media/online_media.6cbaeb92ede94ccb30f1a04ca04c5e8e.svg",
+    "static/media/chatting.svg": "/Portfolio/static/media/chatting.a4cb2434252ce49d62c062f1d8890f96.svg",
+    "static/media/portfolio_website.svg": "/Portfolio/static/media/portfolio_website.1a937c917cf82124dd5e996f59569362.svg",
+    "static/media/data_report.svg": "/Portfolio/static/media/data_report.761e89884f6e0a465b1b41e1a15ad1d3.svg",
     "static/media/credit_card.svg": "/Portfolio/static/media/credit_card.f0df71d4f1f810dc491f95980e9da942.svg",
     "index.html": "/Portfolio/index.html",
-    "main.b9d64653.css.map": "/Portfolio/static/css/main.b9d64653.css.map",
-    "main.43c7d1b7.js.map": "/Portfolio/static/js/main.43c7d1b7.js.map"
+    "main.dceca57d.css.map": "/Portfolio/static/css/main.dceca57d.css.map",
+    "main.0f12508e.js.map": "/Portfolio/static/js/main.0f12508e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9d64653.css",
-    "static/js/main.43c7d1b7.js"
+    "static/css/main.dceca57d.css",
+    "static/js/main.0f12508e.js"
   ]
 }
