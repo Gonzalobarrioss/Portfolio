@@ -9,7 +9,7 @@ function EnergyButtonNeon() {
 
   return (
     <ButtonContainer>
-        <Button onClick={() => store.dispatch(showChatbot(true))}><span>Quiero una pagina</span> </Button>
+        <Button onClick={() => store.dispatch(showChatbot(true))}><span>CONTACTAR</span> </Button>
     </ButtonContainer>
   )
 }

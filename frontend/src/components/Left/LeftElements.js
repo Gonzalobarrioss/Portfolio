@@ -59,7 +59,8 @@ export const SocialMediaLeft = styled.a`
 
     &:hover{
         transform: scale(1.1) translateY(-5px);
-        color: #03e9f4;
+        //color: #03e9f4;
+        color: #fff;
     }
     
 `

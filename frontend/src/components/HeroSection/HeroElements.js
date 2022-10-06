@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
+import {MdKeyboardArrowRight, MdArrowForward, MdArrowDropDown,MdArrowDownward} from 'react-icons/md'
 
 
 
@@ -17,9 +17,12 @@ export const HeroContainer = styled.div`
     margin: 0;
     padding: 0;
     width: 100%;
-    max-width: 1000px;
+    
+    height: 90vh;
     display: flex;
     position: relative;
+    align-items: center;    
+
 `
 
 export const HeroBtnWrapper = styled.div`
@@ -37,12 +40,19 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
-    min-height: 100vh;
+    height: 70vh;
     width: 100%;
     justify-content: center;
-    padding: 0;
+    padding: 3rem;
     margin: 0;
     z-index: 1;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 5px 1px 2px rgba(255, 255, 255, 0.3),
+                0px -5px 1px rgba(255,255,255,0.3);
+    
+    //backdrop-filter: blur(10px);
+    border-radius: 5%;
 
     ${HeroBtnWrapper}
     {
@@ -61,17 +71,17 @@ export const HeroH3 = styled.h3`
 
     @media (min-width: 1440px) {
         //font-size: clamp(80px, 18vw, 100px);
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
 
     @media (min-width: 1024px) and (max-width: 1439px){
         //font-size: clamp(40px, 8vw, 80px);
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     @media (min-width: 768px) and (max-width: 1023px){
         //font-size: clamp(40px, 8vw, 80px);
-        font-size: 1.3em;
+        font-size: 0.9em;
     }
 
     @media screen and (max-width: 424px){
@@ -87,7 +97,7 @@ export const HeroH3 = styled.h3`
 export const HeroH2 = styled.h2`
     color: #8892b0;
     text-align: start;
-    font-size: clamp(30px, 8vw, 70px);
+    font-size: clamp(30px, 8vw, 50px);
     line-height: 0.9;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -99,11 +109,11 @@ export const HeroH2 = styled.h2`
     }
 
     @media (min-width: 1024px) and (max-width: 1439px){
-        font-size: 56px;
+        font-size: 48px;
     }
 
     @media (min-width: 768px) and (max-width: 1023px){
-        font-size: 46px;
+        font-size: 38px;
     }
 
     @media screen and (max-width: 424px){
@@ -118,22 +128,22 @@ export const HeroH2 = styled.h2`
 export const HeroP = styled.p`
     margin-top: 10px;
     color: #8892b0;
-    font-size: 18px;
+    font-size: 14px;
     text-align: start;
     padding: 0;
     max-width: 600px;
     animation: ${showContent} 6s ease;
     @media (min-width: 1440px) {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     @media (min-width: 1024px) and (max-width: 1439px){
-        font-size: 30px;
+        font-size: 24px;
         margin-top: 20px;
     }
 
     @media (min-width: 768px) and (max-width: 1023px){
-        font-size: 24px;
+        font-size: 18px;
     }
 
     @media screen and (max-width: 424px){
@@ -222,7 +232,7 @@ export const HeroGlowingText = styled.h1`
     margin: 0;
     font-weight: 600;
     line-height: 1.1;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 8vw, 70px);
     text-align: start;
     color: #ccd6f6;
     animation: ${showContent} linear 3s;
@@ -248,13 +258,12 @@ export const HeroGlowingText = styled.h1`
     }
     
 `
-export const ArrowForward = styled(MdArrowForward)`
+export const ArrowDown = styled(MdArrowDownward)`
     margin-left: 8px;
-    font-size: 20px;
-    
+    font-size: 16px;
 
     @media (min-width: 1440px) {
-        font-size: 42px;    
+        font-size: 32px;    
     }
 
     @media (min-width: 1024px) and (max-width: 1439px){
@@ -275,12 +284,12 @@ export const ArrowForward = styled(MdArrowForward)`
     }
 `
 
-export const ArrowRight = styled(MdKeyboardArrowRight)`
+export const ArrowRight = styled(MdArrowForward)`
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 16px;
 
     @media (min-width: 1440px) {
-        font-size: 42px;
+        font-size: 32px;
     }
 
     @media (min-width: 1024px) and (max-width: 1439px){
@@ -299,4 +308,16 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
         margin-left: 4px;
         font-size: 18px;
     }
+`
+
+export const ImgWrapper = styled.div`
+    display: flex;
+    position: absolute;
+    right: 10%;
+`
+
+export const ImgContent = styled.img`
+    height: 450px;
+    width: 450px;
+    
 `

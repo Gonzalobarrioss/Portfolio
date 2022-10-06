@@ -2,12 +2,13 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
     color: #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#0a192f')};
+    //background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#0a192f')};
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 10%;
     
     @media screen and (max-width: 1440px) {
         padding: 0;
@@ -37,6 +38,7 @@ export const InfoRow = styled.div`
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
+    //padding: 0 500px;
 `
 
 export const Column1 = styled.div`

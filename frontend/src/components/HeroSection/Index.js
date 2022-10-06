@@ -8,11 +8,17 @@ import {
     HeroH3, 
     HeroP, 
     HeroBtnWrapper, 
-    ArrowForward, 
+    ArrowDown, 
     ArrowRight,
     HeroGlowingText,
-    HeroGlowingLetter
+    ImgWrapper,
+    ImgContent
+    
 } from './HeroElements'
+import Tilt from 'react-vanilla-tilt'
+
+import Img from '../../assets/images/startup_life.svg'
+import { MdFullscreenExit } from 'react-icons/md'
 
 const HeroSection = () => {
 
@@ -26,22 +32,17 @@ const HeroSection = () => {
     
   return (
     <HeroContainer id="home" >
+        
         <HeroContent>
             <HeroH3>Hola, mi nombre es </HeroH3>
                 <HeroGlowingText>
-                    {/*<HeroGlowingLetter>G</HeroGlowingLetter>
-                    <HeroGlowingLetter>O</HeroGlowingLetter>
-                    <HeroGlowingLetter>N</HeroGlowingLetter>
-                    <HeroGlowingLetter>Z</HeroGlowingLetter>
-                    <HeroGlowingLetter>A</HeroGlowingLetter>
-                    <HeroGlowingLetter>L</HeroGlowingLetter>
-  <HeroGlowingLetter>O</HeroGlowingLetter>*/}
                     Gonzalo Barrios
                 </HeroGlowingText>
-                <HeroH2>y hago paginas creativas</HeroH2>
+                <HeroH2>frontend developer</HeroH2>
             <HeroP>
-                Soy un desarrollador frontend especializado en landing page & 4 section web.
+                Hago paginas tales como landing page & 4 section web.
             </HeroP>
+            
             <HeroBtnWrapper>
 
                 <ButtonNeon 
@@ -60,9 +61,16 @@ const HeroSection = () => {
                     <span></span>
                     <span></span>
                     <span></span>
-                    VER MAS {hover ? <ArrowForward /> : <ArrowRight />}
+                    CONTINUAR {hover ? <ArrowDown /> : <ArrowRight />}
                 </ButtonNeon>
             </HeroBtnWrapper>
+            
+            <ImgWrapper>
+            <Tilt style={{display: 'flex', 'z-index': 15, cursor: 'pointer' }} options={{max: 400, speed: 400,glare: true, 'max-glare': 1}}>
+
+                <ImgContent src={Img} />
+            </Tilt>
+            </ImgWrapper>
         </HeroContent>
     </HeroContainer>
   )

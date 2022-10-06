@@ -45,7 +45,7 @@ export const SkillsSection = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 0;
+    //padding: 40px 0;
     min-height: 100vh;
 `
 
@@ -57,12 +57,11 @@ export const SkillsContainer = styled.div`
 `
 export const SkillsText = styled.text`
     position: absolute;
-    bottom: -42px;
+    bottom: -25px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     padding: 30px 20px 10px;
-    background: #f00;
     border-radius: 10px;
     font-weight: 800;
     font-size: 18px;
@@ -78,13 +77,14 @@ export const SkillsText = styled.text`
 
 export const SkillsCard = styled.div`
     position: relative;
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
     text-align: center;
     z-index: 10;
     margin: 20px 20px 60px;
 
     &:hover{
+        cursor: pointer;
         ${SkillsText}{
             transition-delay: 0s,0.5s,0.5s,0s;
             bottom: -70px;

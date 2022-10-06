@@ -29,7 +29,9 @@ export const ButtonNeon = styled(LinkS)`
     display: flex;
     padding: 20px 30px;
     margin-bottom: 10px;
-    color: #03e9f4;
+    //color: #03e9f4;
+    color: #ccd6f6;
+
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -39,14 +41,22 @@ export const ButtonNeon = styled(LinkS)`
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
     border-radius: 5px;
     cursor: pointer;
+    
 
     &:hover{
-        background: #03e9f4;
+        //background: #03e9f4;
+        background: #ccd6f6;
         color: #050801;
-        box-shadow: 0 0 5px #03e9f4,
+        /*box-shadow: 0 0 5px #03e9f4,
                 0 0 25px #03e9f4,
                 0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
+                0 0 200px #03e9f4;*/
+        box-shadow: 0 0 5px rgba(0,0,0,0.2),
+            0 0 25px rgba(255,255,255,0.9),
+            0 0 50px rgba(255,255,255,0.2),
+            0 0 200px rgba(0,0,0,0.9);
+        
+        
     }
 
     
@@ -60,8 +70,8 @@ export const ButtonNeon = styled(LinkS)`
     }
 
     @media screen and (min-width: 1440px){
-        font-size: 36px;
-        padding: 30px 50px;
+        font-size: 24px;
+        padding: 25px 40px;
     }
 
     

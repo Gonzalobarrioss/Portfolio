@@ -2,7 +2,7 @@ import React from 'react'
 
 import HeroSection from '../components/HeroSection/Index'
 import InfoSection from '../components/InfoSection'
-import { about, homeObjTwo, homeObjThree } from '../components/InfoSection/Data'
+import { about } from '../components/InfoSection/Data'
 import Services from '../components/Services'
 import Skills from '../components/Skills'
 import Footer from '../components/Footer'
@@ -15,30 +15,31 @@ import Content from '../components/Content'
 import Contact from '../components/Contact'
 import Main from '../components/Main'
 
+import Slider from '../components/Caroussel/Slider'
+import { SliderData } from '../components/Caroussel/SliderData'
+
 const Home = () => {
 
   
 
   return (
     <LayoutContainer>
-      <Header/>
+      
     
       
       <Left />
       <Right />
+      
         <Content>
-        
+          <Header/>
           <Main>
             <HeroSection />
             <InfoSection {...about}/>
             <Skills />
             <Works />
-            {/*<Services />*/}
-            {/*<InfoSection {...homeObjTwo}/>
             <Services />
-            <InfoSection {...homeObjThree}/>
-            */}
             <Contact/>
+       {/*     <Slider slides={SliderData} /> */ }
           </Main>
           
         <Footer />

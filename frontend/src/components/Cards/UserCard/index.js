@@ -13,7 +13,7 @@ import {
 import UserImg from '../../../images/img1.jpg'
 import UserPerfil from '../../../images/perfil.jfif'
 import Perfil from '../../../assets/images/perfil.jfif'
-import {FaFacebookF,FaInstagram,FaLinkedinIn,FaTelegram,FaTwitter} from 'react-icons/fa'
+import {FaFacebookF,FaInstagram,FaLinkedinIn,FaTelegram,FaTwitter, FaGithubAlt} from 'react-icons/fa'
 
 function UserCard() {
     return (
@@ -28,7 +28,7 @@ function UserCard() {
                     </ContentBx>
                     <CardList>
                         <CardItem>
-                            <SocialMediaItem href="https://instagram.com/ponja__"><FaInstagram /></SocialMediaItem>
+                            <SocialMediaItem href="https://github.com/Gonzalobarrioss"><FaGithubAlt /></SocialMediaItem>
                         </CardItem>
                         <CardItem>
                             <SocialMediaItem href="https://www.linkedin.com/in/gonzaloezequielbarrios/"><FaLinkedinIn /></SocialMediaItem>

@@ -74,7 +74,8 @@ export const Email = styled.a`
     &:before{
         content: 'gonza.barrios.geb@gmail.com';
         position: absolute;
-        color: #03e9f4;
+        //color: #03e9f4;
+        color: #fff;
         height: 0;
         overflow: hidden;
         transition: 1s;
