@@ -16,7 +16,6 @@ import Contact from '../components/Contact'
 import Main from '../components/Main'
 
 import Slider from '../components/Caroussel/Slider'
-import { SliderData } from '../components/Caroussel/SliderData'
 
 const Home = () => {
 
@@ -39,7 +38,7 @@ const Home = () => {
             <Works />
             <Services />
             <Contact/>
-       {/*     <Slider slides={SliderData} /> */ }
+            <Slider /> 
           </Main>
           
         <Footer />

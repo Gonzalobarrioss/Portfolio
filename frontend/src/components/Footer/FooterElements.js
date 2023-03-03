@@ -23,15 +23,16 @@ export const SocialMediaWrap = styled.div`
 export const WebsiteRights = styled.small`
 
     
-
     display: inline-block;
     position: relative;
 
     font-size:16px;
-    color: #8892b0;
+    //color: #8892b0;
+    color: #fff;
     margin: 16px 0;
-    transition: 0.5s;
-    overflow: hidden;
+    
+    //transition: 0.5s;
+    //overflow: hidden;
     
     -webkit-text-stroke: 1px rgba(255,255,255,0.1);
 
@@ -39,17 +40,17 @@ export const WebsiteRights = styled.small`
     @media (min-width: 769px){
         font-size: 18px;
     }
-
+/*
     ::before{
-        animation: animate 5s linear infinite;
+        //animation: animate 9s linear infinite;
         content: 'Powered by Gonzalo Barrios ©2022';
         position: absolute;
         //color: #03e9f4;
         color: #fff;
-        width: 0;
-        overflow: hidden;
-        transition: 5s;
-    }
+        width: 100%;
+        //overflow: hidden;
+        transition: 9s;
+    }*/
 
     @keyframes animate {
         0%{
